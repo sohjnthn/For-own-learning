@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cucumber Test Suite" parallel="false">
+    <!-- Note: The testng.xml file for the package name, should be
+    within the package folder, to avoid the red line error.-->
+
+    <!-- Replace with your "packageName.mainJavaClassNameWithoutDotJava" for running the
+    related Given, When, Then methods (via the Selenium Documentation page
+    object model (non-main) Java classes' Java Objects);
+
+    1) The number of (non-main) Java classes for the three groups of websites
+    is *three* in total for the Given, When, and Then methods of the main Java
+    class TestDesktopWebsites.java respectively; or
+
+    2) The number of (non-main) Java classes for the three smartphone
+    applications is *three* in total for Given, When, Then of the main Java
+    class TestAndroidApps.java, for which the Given and When methods each use one
+    object of first (non-main) Java class' object respectively, and the Then method
+    used one object each of the second and third (non-main) Java classes -->
+    <test name="Cucumber TestDesktopWebsites">
+        <classes>
+            <class name="hellocucumber.TestDesktopWebsites"/>
+
+        </classes>
+    </test>
+    <!-- Additional note: As Selenium_Android is from another IntelliJ IDEA (Community)
+    Project, and the related files were copied from Selenium_Android, the filepath
+    is not allowed to use Selenium_Tutorial (this project)'s Selenium_Screenshot_Images
+    folder. This applies to all four Selenium_Android Java files' bottom of the
+    "public static String takeScreenshot(WebDriver driver) throws IOException" method(s).
+    Therefore, the Selenium_Screenshot_Images folders for Selenium_Tutorial and Selenium_Android
+    do not contain the other project's screenshot images respectively. -->
+    <test name="Cucumber TestAndroidApps">
+        <classes>
+            <class name="hellocucumber.TestAndroidApps"/>
+        </classes>
+    </test>
+    <!-- Observation:
+
+    Both "Spark" ExtentReports reached the target folder of the Selenium_Tutorial project.
+    The App ExtentReport was created about 1 minute after the Desktop Website ExtentReport.
+
+    T
+
+    As compared to running each project's respective feature files
+    separately via each project, running both features together in a suite keeps having
+    errors frequently.
+
+    For the case of the first, and third smartphone applications which were used, we need
+    to be able to click on the permission buttons (which cannot be detected by
+    the Appium Inspected Weblink) once, in time. Clicking twice means the related test for
+    the Then method of the main Java class TestAndroidApps.java would fail.
+    -->
+</suite>
