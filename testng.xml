@@ -39,8 +39,6 @@
     Both "Spark" ExtentReports reached the target folder of the Selenium_Tutorial project.
     The App ExtentReport was created about 1 minute after the Desktop Website ExtentReport.
 
-    T
-
     As compared to running each project's respective feature files
     separately via each project, running both features together in a suite keeps having
     errors frequently.
