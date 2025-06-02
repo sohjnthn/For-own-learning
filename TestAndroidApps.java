@@ -85,9 +85,9 @@ public class TestAndroidApps {
         System.out.println("testing the IntelliJ IDEA - Help - Testing - Create Tests - Right-click to generate Test Method for JUnit5.");
     }
 
-    @Test
     @org.junit.Test
     @org.junit.jupiter.api.Test
+    @Test
     @Given("I wish to learn how to automate a smartphone application which can be used for a real Android 15 device")
     public void testMethod1() throws IOException {
         // this line only works without an error, in a public method, as it is a public void method
@@ -106,17 +106,17 @@ public class TestAndroidApps {
 
     }
 
-    @Test
     @org.junit.Test
     @org.junit.jupiter.api.Test
+    @Test
     @When("I provide the Given and When methods with a new object of the first non-main class")
     public void testMethod2 () throws IOException {
         firstAppObjects = new FirstAppObjects(driver1, extentTest, extentSparkReporter, extentReport);
     }
-
-    @Test
+        
     @org.junit.Test
     @org.junit.jupiter.api.Test
+    @Test
     @Then("I provide the Then method with the new objects of the second and third non-main classes")
     public void testMethod3 () throws IOException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
