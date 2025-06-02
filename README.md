@@ -9,4 +9,6 @@ Otherwise, the entire main Java class; and the related page Java classes (for wh
 
 This happened for the third page Java class for testing the third smartphone application which requires a very long time to click on the non-detectable permissions (the Cucumber Then method of the main Java class, calls the new objects of the second and third smartphone appications, and each page Java class is for each smartphone application in this case), for the testing for the Android smartphone applications with a real Android 15 device.
 
+As searched online, for the real Android testing device, for both before and after any testing, go to the device's Settings, search for "Apps", click on Apps, click on App management, search for "ui", and click on the two UiAutomator2 apps (only if present) to uninstall both of them.
+
 Thank you.
