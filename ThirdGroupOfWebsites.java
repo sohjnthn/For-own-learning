@@ -19,8 +19,8 @@ import static hellocucumber.TestDesktopWebsites.takeScreenshot;
 
 public class ThirdGroupOfWebsites {
 
-    String websiteTitle = "";
-    String capturedScreenshotImageFilepathString = "";
+    private String websiteTitle = "";
+    private String capturedScreenshotImageFilepathString = "";
 
     public ThirdGroupOfWebsites (ChromeDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
         // Therefore, the Cucumber Feature version requires driver4 to be initialised for the Then method
