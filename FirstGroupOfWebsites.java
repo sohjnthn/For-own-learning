@@ -20,8 +20,8 @@ import static hellocucumber.TestDesktopWebsites.takeScreenshot;
 
 public class FirstGroupOfWebsites {
 
-    String websiteTitle = "";
-    String capturedScreenshotImageFilepathString = "";
+    private String websiteTitle = "";
+    private String capturedScreenshotImageFilepathString = "";
 
     public FirstGroupOfWebsites (ChromeDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
         System.out.println("testing");
