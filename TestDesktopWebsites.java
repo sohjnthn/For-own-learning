@@ -1,5 +1,6 @@
     package hellocucumber;
 
+    import io.cucumber.testng.AbstractTestNGCucumberTests;
     import com.aventstack.extentreports.ExtentReports;
     import com.aventstack.extentreports.ExtentTest;
     import com.aventstack.extentreports.MediaEntityBuilder;
@@ -20,6 +21,7 @@
     import org.openqa.selenium.TakesScreenshot;
     import org.openqa.selenium.chrome.ChromeDriver;
     import org.openqa.selenium.io.FileHandler;
+    import org.testng.annotations.Test;
 
     import java.io.File;
     import java.io.IOException;
@@ -44,24 +46,24 @@
     public class TestDesktopWebsites {
         // Test.java class should be within src > test
 
-        WebDriver driver1 = new ChromeDriver();
+        private WebDriver driver1 = new ChromeDriver();
 
-        String websiteTitle = "";
-        String capturedScreenshotImageFilepathString = "";
+        private String websiteTitle = "";
+        private String capturedScreenshotImageFilepathString = "";
 
-        String currentLocalDateTimeForExtentSparkReporter = currentLocalDateTimeWithDdMmYyFormat();
+        private String currentLocalDateTimeForExtentSparkReporter = currentLocalDateTimeWithDdMmYyFormat();
 
-        ExtentReports extentReport = new ExtentReports();
+        private ExtentReports extentReport = new ExtentReports();
         // should be target/Spark.html, not an actual filepath starting from C:\\
-        ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("target/Spark_" + currentLocalDateTimeForExtentSparkReporter  + ".html");
+        private ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter("target/Spark_" + currentLocalDateTimeForExtentSparkReporter  + ".html");
 
-        ExtentTest extentTest = extentReport.createTest("Selenium_Tutorial Test");
+        private ExtentTest extentTest = extentReport.createTest("Selenium_Tutorial Test");
 
-        FirstGroupOfWebsites firstGroupOfWebsites;
+        private FirstGroupOfWebsites firstGroupOfWebsites;
 
-        SecondGroupOfWebsites secondGroupOfWebsites;
+        private SecondGroupOfWebsites secondGroupOfWebsites;
 
-        ThirdGroupOfWebsites thirdGroupOfWebsites;
+        private ThirdGroupOfWebsites thirdGroupOfWebsites;
 
         public TestDesktopWebsites() throws IOException {
         }
@@ -75,6 +77,7 @@
 
         @org.junit.Test
         @org.junit.jupiter.api.Test
+        @Test
         @Given("that the easiest way to find WebElements is by driver.findElement; and driver.findElements which returns a List WebElement")
         public void testMethod1() throws IOException {
             // this line only works without an error, in a public method, as it is a public void method
@@ -88,6 +91,7 @@
 
         @org.junit.Test
         @org.junit.jupiter.api.Test
+        @Test
         @When("it is not possible to do so for certain WebElements in this way")
         public void testMethod2 () throws IOException {
 
@@ -97,6 +101,7 @@
 
         @org.junit.Test
         @org.junit.jupiter.api.Test
+        @Test
         @Then("we use driver.findElement By.tagName\"...\", for which ... can be i for <i> or button for <button>")
         public void testMethod3 () throws IOException {
 
