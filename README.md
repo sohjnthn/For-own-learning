@@ -1,7 +1,7 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
 Observation:
-For each Java class, "private" can only be provided for the objects above the Java class's methods only if at most one non-detectable WebElement needs to be manually clicked on.
+For each Java class, "private" can only be provided for the objects above the Java class's methods only if at most one (non-detectable as a WebElement) permission button needs to be manually clicked on.
 
 Therefore, "private" can only be provided for the main Java class; and three page Java classes for testing the Google Chrome desktop web browser websites.
 
