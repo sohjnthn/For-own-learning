@@ -19,8 +19,8 @@ import static hellocucumber.TestDesktopWebsites.takeScreenshot;
 
 public class SecondGroupOfWebsites {
 
-    String websiteTitle = "";
-    String capturedScreenshotImageFilepathString = "";
+    private String websiteTitle = "";
+    private String capturedScreenshotImageFilepathString = "";
 
     public SecondGroupOfWebsites (ChromeDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
 
