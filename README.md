@@ -40,3 +40,6 @@ Android Studio is able to use the same files, but with the renaming of the packa
 9. The Java files and the testng.xml should still be under the src - test - java - package folder for both IntelliJ IDEA (the package folder is cucumber); and Android Studio (the package folder is com.example.cucumber).
 
 11. The src - test folder, contains the resources folder, which contains the features folder for Selenium_Tutorial.feature; and Selenium_Android.feature.
+
+12. The IntelliJ IDEA project creation should use the Build System as Gradle, the JDK as openjdk-23, Gradle DSL as Groovy; and should tick (check) the Add sample code checkbox.
+
