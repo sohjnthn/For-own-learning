@@ -36,3 +36,7 @@ Android Studio is able to use the same files, but with the renaming of the packa
 
 8. The smartphone application (Android 15) screenshot images went to the IntelliJ IDEA project Selenium_Android - Selenium_Screenshot_Images folder.
 (As Selenium_Android was where the original files were located.)
+
+9. The Java files and the testng.xml should still be under the src - test - java - package folder for both IntelliJ IDEA; and Android Studio.
+
+10. The src - test folder, contains the resources folder, which contains the features folder for Selenium_Tutorial.feature; and Selenium_Android.feature.
