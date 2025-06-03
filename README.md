@@ -43,5 +43,5 @@ Android Studio is able to use the same files, but with the renaming of the packa
 
 12. The IntelliJ IDEA project creation should create a New Project as Java, to use the Build System as Gradle, the JDK as openjdk-23, Gradle DSL as Groovy; and should tick (check) the Add sample code checkbox.
 
-13. For the case of the IntelliJ IDEA prokect creation for creating a New Project as Java, to use the Build System as Maven, the JDK as openjdk-23, and should tick (check) the Add sample code checkbox, following online examples did not work. Instead, going to any Java file's import statements, to click on Add maven dependecy was able to resolve the import statements and the rest of the red text errors.
+13. For the case of the IntelliJ IDEA prokect creation for creating a New Project as Java, to use the Build System as Maven, the JDK as openjdk-23, and should tick (check) the Add sample code checkbox, following online examples did not work. Instead, going to any Java file's import statements, to click on Add maven dependecy - Maven Artifact Search window - Search for Artifact - Type in the first few character of the import statement without the word "import", was able to resolve the import statements and the rest of the red text errors.
 
