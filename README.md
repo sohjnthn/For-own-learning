@@ -54,3 +54,4 @@ Then, the External Libraries folder would appear, such that the build.gradle (Mo
 class file for org.openqa.selenium.mobile.NetworkConnection not found".
 Each Given, When, Then line of the feature file can be linked to the correct @Given/@When/@Then("..." of the main Java files, but the features cannot be directly run by using the green >>.
 
+13. Tried to import the IntelliJ IDEA project Selenium_Tutorial (which contains the testng.xml file for running both main Java classes (for the desktop websites; and for the real Android 15 device smarphone applications) to the Eclipse IDE for Java projects. Not able to actually run one of the two feature files, and not able to run the testng.xml file.
