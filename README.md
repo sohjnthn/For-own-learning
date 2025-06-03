@@ -38,5 +38,7 @@ Android Studio is able to use the same files, but with the renaming of the packa
 (As Selenium_Android was where the original files were located.)
 
 9. The Java files and the testng.xml should still be under the src - test - java - package folder for both IntelliJ IDEA; and Android Studio.
+1) IntelliJ IDEA package folder name: hellocucumber
+2) Android Studio package folder name: com.example.hellocucumber
 
 10. The src - test folder, contains the resources folder, which contains the features folder for Selenium_Tutorial.feature; and Selenium_Android.feature.
