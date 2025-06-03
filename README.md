@@ -41,5 +41,5 @@ Android Studio is able to use the same files, but with the renaming of the packa
 
 11. The src - test folder, contains the resources folder, which contains the features folder for Selenium_Tutorial.feature; and Selenium_Android.feature.
 
-12. The IntelliJ IDEA project creation should use the Build System as Gradle, the JDK as openjdk-23, Gradle DSL as Groovy; and should tick (check) the Add sample code checkbox.
+12. The IntelliJ IDEA project creation should create a New Project as Java, to use the Build System as Gradle, the JDK as openjdk-23, Gradle DSL as Groovy; and should tick (check) the Add sample code checkbox.
 
