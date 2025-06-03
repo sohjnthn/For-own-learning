@@ -31,11 +31,11 @@ Android Studio is able to use the same files, but with the renaming of the packa
 
 6. As the Android Studio project MyApplication5's "Spark" ExtentReports are not restricted by filepaths, they reached MyApplication5 - app - target folder.
 
-7. The desktop web browser (Google Chrome) screenshot images went to the IntelliJ IDEA project Selenium_Tutorial - Selenium_Screenshot_Images folder.
-(As Selenium_Tutorial was where the original files were located.)
+7. The desktop web browser (Google Chrome) screenshot images went to the IntelliJ IDEA project Selenium_Tutorial - Selenium_Screenshot_Images folder
+(As Selenium_Tutorial was where the original files were located).
 
 8. The smartphone application (Android 15) screenshot images went to the IntelliJ IDEA project Selenium_Android - Selenium_Screenshot_Images folder.
-(As Selenium_Android was where the original files were located.)
+(As Selenium_Android was where the original files were located).
 
 9. The Java files and the testng.xml should still be under the src - test - java - package folder for both IntelliJ IDEA (the package folder is cucumber); and Android Studio (the package folder is com.example.cucumber).
 
