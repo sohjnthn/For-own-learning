@@ -17,4 +17,10 @@ So the above working changes have been manually edited for this repository.
 
 It is better to add all possible permissions via the Android testing device - Settings - Search for "Apps" - Apps - App Management - Click on the related smartphone applications for testing, to allow all possible permissions, so that the Android testing device can wait for some more time for the case of multiple permission requests which cannot be detected by the Appium Inspector weblink (for example, (Microsoft) Edge Canary from APKMirror for Android 15).
 
+Reasons for why Android Studio cannot allow Cucumber; and TestNG to work, for the same code:
+
+1. It is not possible to link the Selenium_Tutorial.feature; and Selenium_Android.feature files to the main Java files which declare the test steps.
+
+2. Even if the "hellocucumber" package folder of IntelliJ IDEA is copied to the Android Studio project, testng.xml for TestNG does not allow "hellocucumber.mainClassNameWithoutDotJava to be used". The hellocucumber package folder for IntelliJ IDEA, becomes a normal directory folder for Android Studio.
+
 Thank you.
