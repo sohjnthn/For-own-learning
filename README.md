@@ -3,7 +3,7 @@ For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentRepor
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... }
 2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... }
-, are required as : is not accepted for the filename.
+, are required as the character ':' is not accepted for the filename.
 The else { ... } code lines are not required as they are for System.out.println("...");   
 Most of the two methods' comment lines are not required.
 For String initialLocalDateTimeStringTimeSubString = initialLocalDateTimeString.substring(10);
