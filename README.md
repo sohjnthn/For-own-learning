@@ -1,5 +1,13 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
+Declare the following three lines above each Given/When/Then method of the main Java class, which needs to call a new page Java class's object:
+@org.junit.Test
+@org.junut.jupiter.api.Test
+@org.testng.annotations.Test
+
+Sometimes, the third line of the above may be displayed as:
+@Test
+
 Observation:
 For each Java class, "private" can only be provided for the objects above the Java class's methods only if at most one (non-detectable as a WebElement) permission button needs to be manually clicked on.
 
