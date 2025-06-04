@@ -1,5 +1,16 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
+The methods
+1. public static String takeScreenshot(WebDriver driver) throws IOException { ... }
+2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... }
+, are required as : is not accepted for the filename.
+The else { ... } code lines are not required as they are for System.out.println("...");   
+Most of the two methods' comment lines are not required.
+For String initialLocalDateTimeStringTimeSubString = initialLocalDateTimeString.substring(10);
+Do not use (10,29), as initialLocalDateTimeString has 26, 27, 28, or 29 characters
+All digit characters are to be initialised to '0', as we would be providing all 29 characters.
+Only if a certain number of characters is reached, then each character would be assigned with the detected character.
+
 Declare the following three lines above each Given/When/Then method of the main Java class, which needs to call a new page Java class's object:
 @org.junit.Test
 @org.junut.jupiter.api.Test
