@@ -1,8 +1,8 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
 The methods
-1. public static String takeScreenshot(WebDriver driver) throws IOException { ... }
-2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... }
+1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
+2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... } - Only use this public static String method for the main Java classes which call the new page Java classes objects
 , are required as the character ':' is not accepted for the filename.
 The else { ... } code lines are not required as they are for System.out.println("...");   
 Most of the two methods' comment lines are not required.
