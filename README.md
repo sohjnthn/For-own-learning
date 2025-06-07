@@ -4,7 +4,7 @@ Do not copy and paste the entire Java files into the related folders for a new J
 
 Then, the related required Java code lines can be copied and pasted from the original Java files.
 
-This is to ensure that the public static String takeScreenshot(WebDriver driver) throws IOException { ... } method is allowed to save the screenshot images for the new Java project, instead of being restricted to only saving the screenshot images for the Selenium_Screenshot_Images folder of the original Java projects.
+This is to ensure that the public static String takeScreenshot(WebDriver driver) throws IOException { ... } method is allowed to save the screenshot images for the new Java project, instead of being restricted to only saving the screenshot images for the Selenium_Screenshot_Images folders of the original Java projects (if this mistake is done, create a new Java Project to correct the issue).
 
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
