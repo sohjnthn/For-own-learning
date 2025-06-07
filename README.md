@@ -1,10 +1,8 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
-Do not copy and paste the entire Java files into the related folders for a new Java project. Instead, create them manually.
+The reason for why the original Selenium_Android project's screenshot image filepath was not accepted, was due to missing "-" characters for the required folder.
 
-Then, the related required Java code lines can be copied and pasted from the original Java files.
-
-This is to ensure that the public static String takeScreenshot(WebDriver driver) throws IOException { ... } method is allowed to save the screenshot images for the new Java project, instead of being restricted to only saving the screenshot images for the Selenium_Screenshot_Images folders of the original Java projects (if this mistake is done, create a new Java Project to correct the issue).
+Therefore, there is no need to re-create a new Java project.
 
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
