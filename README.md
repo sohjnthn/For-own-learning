@@ -1,6 +1,6 @@
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
-The reason for why the original Selenium_Android project's screenshot image filepath was not accepted, was due to missing "-" characters for the required folder.
+The reason for why the original Selenium_Android project's screenshot image filepath was not accepted, was due to missing "_" characters for the required folder.
 
 Therefore, there is no need to re-create a new Java project.
 
