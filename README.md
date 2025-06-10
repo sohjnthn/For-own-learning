@@ -42,7 +42,7 @@ for (int i=0; i < 9999999; i++){
 
 This also ensures that while it is not possible to search for the individual web elements like the desktop Google Chrome web browser for the Microsoft Bing search results webpage for the same search term, the correct search term is clicked on for a very less percentage of tries. As tested with the IntelliJ IDEA project "Selenium_Tutorial" 's testng.xml file for running the hellocucumber package's TestDesktopWebsites.java and TestAndroidApps.java. Android Studio still clicked on the next partialLinkText (weblink).
 
-Searched online, would try https://inspector.appiumpro.com/ - Web/Hybrid App Mode button for resolving the third App. The WebElements can now be searched for properly for the Microsoft Bing smartphone application's search results webpage. However, after reaching the required webpage, the (magnifying glass) search icon cannot be identified, which would have to be skipped. Some buttons are linked together as an element, and cannot be individually clicked on.
+Searched online, would try https://inspector.appiumpro.com/ - Web/Hybrid App Mode button for resolving the third App. Unfortunately, have searched online, switching the context does not help, as the Web/Hybrid App Mode - WebElement still cannot by the running code.
 
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
