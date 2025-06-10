@@ -44,6 +44,15 @@ This also ensures that while it is not possible to search for the individual web
 
 Searched online, would try https://inspector.appiumpro.com/ - Web/Hybrid App Mode button for resolving the third App. Unfortunately, have searched online, switching the context does not help, as the Web/Hybrid App Mode - WebElement still cannot by the running code.
 
+Searched online for how to use IntelliJ IDEA's virtual Android device (Help > Find Action... > Search for "Device Manager"), the virtual Android device is only able to run the first two Apps (and is unable to do so for the third App), but TestAndroidApps.java needs to set the respective code line(s) to
+desiredCapabilities.setCapability("appium:platformVersion", "16.0");
+(As the Android API level is fixed at 36.0;
+still able to click on permission notification buttons manually via Running Devices)
+
+The physical Android testing device uses 
+desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+(The Android API level is 35.0)
+
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
 2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... } - Only use this public static String method for the main Java classes which call the new page Java classes objects
