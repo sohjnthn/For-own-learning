@@ -4,9 +4,35 @@ The reason for why the original Selenium_Android project's screenshot image file
 
 Therefore, there is no need to re-create a new Java project.
 
-Similarly, Android Studio, and Eclipse, for the imported IntelliJ IDEA Project "Selenium_Tutorial", would always click on the next partialLinkText (weblink) for the (Microsoft) Edge Canary smartphone application for the Microsoft Bing search results webpage, instead of the correct partialLinkText (weblink) for the desktop Google Chrome web browser - Microsoft Bing search results web page.
+Similarly, Android Studio, and Eclipse for Java, for the imported IntelliJ IDEA Project "Selenium_Tutorial", would always click on the next partialLinkText (weblink) for the (Microsoft) Edge Canary smartphone application for the Microsoft Bing search results webpage, instead of the correct partialLinkText (weblink) for the desktop Google Chrome web browser - Microsoft Bing search results web page.
 
-Android Studio, and Eclipse are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
+Android Studio, and Eclipse for Java are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
+
+*
+Eclipse for Java cannot be used to test for smartphone applications; as URL is not accepted. Only IntelliJ IDEA, and Android Studio accept URL.
+
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("platformName", "Android");
+desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.afwsamples.testdpc_9.0.12-9012_minAPI21(nodpi)_apkmirror.com.apk");
+desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("platformName", "Android");
+desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\ApiDemos-debug.apk");
+desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+driver2 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+
+desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability("platformName", "Android");
+desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.microsoft.emmx.canary_138.0.3336.0-333600000_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk");
+desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+driver3 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+*
+
 
 The third App (ThirdAppObjects.java), which is the (Microsoft) Edge Canary App, can only work if all for loops for delaying purposes, to prevent errors which occur from the slow loading and manual clicking of permissions, are provided as
 
@@ -89,4 +115,4 @@ Each Given, When, Then line of the feature file can be linked to the correct @Gi
 
 =
 
-Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Sutdio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
+Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Sutdio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
