@@ -8,7 +8,7 @@ Similarly, Android Studio, and Eclipse, for the imported IntelliJ IDEA Project "
 
 Android Studio, and Eclipse are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
 
-The third App, which is the (Microsoft) Edge Canary App, can only work if all for loops for delaying purposes, to prevent errors which occur from the slow loading and manual clicking of permissions, are provided as
+The third App (ThirdAppObjects.java), which is the (Microsoft) Edge Canary App, can only work if all for loops for delaying purposes, to prevent errors which occur from the slow loading and manual clicking of permissions, are provided as
 
 for (int i=0; i < 9999999; i++){
   System.out.println("...");
