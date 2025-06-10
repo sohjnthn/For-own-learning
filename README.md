@@ -8,6 +8,14 @@ Similarly, Android Studio, and Eclipse, for the imported IntelliJ IDEA Project "
 
 Android Studio, and Eclipse are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
 
+The third App, which is the (Microsoft) Edge Canary App, can only work if all for loops for delaying purposes, to prevent errors which occur from the slow loading and manual clicking of permissions, are provided as
+
+for (int i=0; i < 9999999; i++){
+  System.out.println("...");
+}
+
+This also ensures that while it is not possible to search for the individual web elements like the desktop Google Chrome web browser for the Microsoft Bing search results webpage for the same search term, the correct search term is clicked on. As tested with the IntelliJ IDEA project "Selenium_Tutorial" 's testng.xml file for running the hellocucumber package's TestDesktopWebsites.java and TestAndroidApps.java.
+
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
 2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... } - Only use this public static String method for the main Java classes which call the new page Java classes objects
