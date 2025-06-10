@@ -44,7 +44,7 @@ This also ensures that while it is not possible to search for the individual web
 
 Searched online, would try https://inspector.appiumpro.com/ - Web/Hybrid App Mode button for resolving the third App. Unfortunately, have searched online, switching the context does not help, as the Web/Hybrid App Mode - WebElement still cannot by the running code.
 
-Searched online for how to use IntelliJ IDEA's virtual Android device (Help > Find Action... > Search for "Device Manager"), the virtual Android device is only able to run the first two Apps (and is unable to do so for the third App), but TestAndroidApps.java needs to set the respective code line(s) to
+Searched online for how to use IntelliJ IDEA's virtual Android device (Help > Find Action... > Search for "Device Manager"), the virtual Android device is only able to run the first two Apps (and is unable to do so for the third App, which may be a smartphone application which uses both the default mode, and the Web/Hybrid App Mode), but TestAndroidApps.java needs to set the respective code line(s) to
 
 desiredCapabilities.setCapability("appium:platformVersion", "16.0");
 
