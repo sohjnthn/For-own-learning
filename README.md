@@ -4,6 +4,10 @@ The reason for why the original Selenium_Android project's screenshot image file
 
 Therefore, there is no need to re-create a new Java project.
 
+Similarly, Android Studio, and Eclipse, for the imported IntelliJ IDEA Project "Selenium_Tutorial", would always click on the next partialLinkText (weblink) for the (Microsoft) Edge Canary smartphone application for the Microsoft Bing search results webpage, instead of the correct partialLinkText (weblink) for the desktop Google Chrome web browser - Microsoft Bing search results web page.
+
+Android Studio, and Eclipse are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
+
 The methods
 1. public static String takeScreenshot(WebDriver driver) throws IOException { ... } - Only use this public static String method for the page Java classes
 2. public static String currentLocalDateTimeWithDdMmYyFormat() throws IOException { ... } - Only use this public static String method for the main Java classes which call the new page Java classes objects
@@ -45,10 +49,6 @@ Android Studio is able to use the same files, but with the renaming of the packa
 1. Do not delete all package folders for an Android Studio project (they look similar to the IntelliJ IDEA project package folders), otherwise, a new AndroidStudio project should be created.
 
 2. The new Android Studio project should be created as a "No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)".
-As compared to an IntelliJ IDEA project, the same build.gradle file's text can be used for the Gradle Scripts - build.gradle (Module: app). However, for Android Studio, please remove the inner text for the following text for this to be able to work. The following text, and all other text which is above, and below can remain.
-
-repositories {
-}   
 
 Then, the External Libraries folder would appear, such that the build.gradle (Module: app) is no longer displayed or cannot be found. Taking note that this is not related to the remaining visible build.gradle (#Project Name#) file. So the Android Studio project's dependencies need to be checked carefully before syncing.
 
@@ -79,4 +79,6 @@ Each Given, When, Then line of the feature file can be linked to the correct @Gi
 
 13. Tried to import the IntelliJ IDEA project Selenium_Tutorial (which contains the testng.xml file for running both main Java classes (for the desktop websites; and for the real Android 15 device smarphone applications) to the Eclipse IDE for Java projects. Not able to actually run one of the two feature files, and not able to run the testng.xml file. Cucumber (the feature files' Given, When, and Then lines cannot reach the Java files' related code); and TestNG (red text errors are displayed) are not recognised - Later resolved by forced download for "https://testng.org/testng-1.0.dtd", for the testng.xml file. Each method of the two main Java classes can be run by clicking on Run, for Run | Debug manually; and each main Java class can be run manually by clicking on Run All. The "Spark" ExtentReport went to the target folder of the IntelliJ IDEA project Selenium_Tutorial. This is after searching for the related plugins to install for Selenium, Cucumber, Appium, and TestNG. The testng.xml file can also be run, it seemed that everything was entirely executed, but much slower than for the desktop web browser websites as compared to running each main Java class separately, such that a WebElement for the third method of the main Java class for the desktop web browser websites, was not detected, but was actually reached based on visual inspection. *It would be better to use IntelliJ IDEA to run both the Cucumber feature files; and testng.xml.*
 
-Conclusion: It is better to use IntelliJ IDEA - Java - build.gradle (Gradle DSL as Groovy) - opensdk-23, to test automation for the desktop web browser; and for the real mobile phone device, for the related separate Cucumber feature files; or for the testng.xml which tests for the main Java classes of the same package folder. There would not be difficulties for adding or removing dependencies (Android Studio); some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project).
+=
+
+Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Sutdio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
