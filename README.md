@@ -141,7 +141,9 @@ One extra repeating of the above code lines is required for the last screenshot 
 
 Noting that the third smartphone application opens, and then closes automatically after manually clicking on the permission buttons, for the case of testpartialapps.py, so the related code would be removed.
 
-Unfortunately, unable to actually run a test, even though the displayed UI is correct.
+Having difficulties for creating python functions, as datetime = datetime.now() cannot be used in a python method which starts with "def functioname():".
+
+Unfortunately, unable to actually run a test with ExtentReport; or pytest, even though the displayed UI is correct.
 
 =
 
