@@ -139,6 +139,8 @@ driver1.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Pytho
 
 One extra repeating of the above code lines is required for the last screenshot image to be taken for a driver for the correct UI; unlike IntelliJ IDEA - Java which does not require this to be done, to display the correct UI.
 
+Noting that the third smartphone application opens, and then closes automatically after manually clicking on the permission buttons, for the case of testpartialapps.py, so the related code would be removed.
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
