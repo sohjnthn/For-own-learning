@@ -141,6 +141,8 @@ One extra repeating of the above code lines is required for the last screenshot 
 
 Noting that the third smartphone application opens, and then closes automatically after manually clicking on the permission buttons, for the case of testpartialapps.py, so the related code would be removed.
 
+Unfortunately, unable to actually run a test, even though the displayed UI is correct.
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
