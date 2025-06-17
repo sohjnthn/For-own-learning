@@ -128,7 +128,7 @@ Each Given, When, Then line of the feature file can be linked to the correct @Gi
 
 13. Tried to import the IntelliJ IDEA project Selenium_Tutorial (which contains the testng.xml file for running both main Java classes (for the desktop websites; and for the real Android 15 device smarphone applications) to the Eclipse IDE for Java projects. Not able to actually run one of the two feature files, and not able to run the testng.xml file. Cucumber (the feature files' Given, When, and Then lines cannot reach the Java files' related code); and TestNG (red text errors are displayed) are not recognised - Later resolved by forced download for "https://testng.org/testng-1.0.dtd", for the testng.xml file. Each method of the two main Java classes can be run by clicking on Run, for Run | Debug manually; and each main Java class can be run manually by clicking on Run All. The "Spark" ExtentReport went to the target folder of the IntelliJ IDEA project Selenium_Tutorial. This is after searching for the related plugins to install for Selenium, Cucumber, Appium, and TestNG. The testng.xml file can also be run, it seemed that everything was entirely executed, but much slower than for the desktop web browser websites as compared to running each main Java class separately, such that a WebElement for the third method of the main Java class for the desktop web browser websites, was not detected, but was actually reached based on visual inspection. *It would be better to use IntelliJ IDEA to run both the Cucumber feature files; and testng.xml.*
 
-14. For Webstorm, for testpartialwebsites.py, able to save the screenshot image files by following the Selenium screenshot images, with the screenshot image filenames having the format "dd-mm-yyyy hhmmss.xxxxxx".
+14. For Webstorm, for testpartialwebsites.py and testpartialapps.py, able to save the screenshot image files by following the Selenium screenshot images, with the screenshot image filenames having the format "dd-mm-yyyy hhmmss.xxxxxx".
     
 datetime = datetime.now()
 print("datetime is: " + datetime.__str__())
@@ -136,6 +136,8 @@ datetimeText = datetime.strftime("%d-%m-%Y %H%M%S.%f")
 datetimeTextString = datetimeText.__str__()
 print("datetimeText is: " + datetimeTextString)
 driver1.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
+
+One extra repeating of the above code lines is required for the last screenshot image to be taken for a driver for the correct UI; unlike IntelliJ IDEA - Java which does not require this to be done, to display the correct UI.
 
 =
 
