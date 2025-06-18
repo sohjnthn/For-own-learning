@@ -199,7 +199,7 @@ For the Webstorm IDE, Python files for the same package are run together, so to 
 At the bottom of each Python file, remember to include the following:
 generate_html_report(screenshots)
 
-Unfortunately, testpartialwebsites.py is encountering the issue for which after it reaches the "Latest" webpage, it keeps loading; or it closes the Google Chrome web browser. This may be due to the personal laptop's memory usage issue. The code which cannot be executed would be removed; and also due to being unable to find the Amino Home icon. Noting that to display the Submit button of the "https://demo.guru99.com/" webpage, the automatically opened Google Chrome web browser window should be manually maximised (although the step still passes as the Submit button is actually displayed).
+The opened Google Chrome web browser keeps closing. This should be due to copy and paste mistakes.
 
 =
 
