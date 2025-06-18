@@ -193,6 +193,8 @@ datetimeTextString = current_datetime_string_generator()
 driver2.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
 
 For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration. As encountered the issue for which testpartialwebsites.py kept running first before testpartialapps.pay was run; even though only testpartialwebsites.py should be run. Please kindly take note to use the Python Unittests in #PythonFilename# configuration for running each file.
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/cdbebb3d-3dde-4612-a984-61701d2864ea" />
+
 
 At the bottom of each Python file, remember to include the following:
 generate_html_report(screenshots)
