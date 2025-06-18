@@ -141,7 +141,7 @@ One extra repeating of the above code lines is required for the last screenshot 
 
 Noting that the third smartphone application opens, and then closes automatically after manually clicking on the permission buttons, for the case of testpartialapps.py, so the related code would be removed.
 
-Having difficulties for creating python functions, as datetime = datetime.now() cannot be used in a python method which starts with "def functioname():".
+Found the issue for why the print statements would not be generated if the above code is in a Python function. datetime should be datetimee, excluding for datetime.now()
 
 Unfortunately, unable to actually run a test with ExtentReport; or pytest, even though the displayed UI is correct.
 
