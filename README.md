@@ -145,6 +145,13 @@ Found the issue for why the print statements would not be generated if the above
 
 Unfortunately, unable to actually run a test with ExtentReport; or pytest, even though the displayed UI is correct.
 
+Therefore, searched online for how to create a html report with the taken screenshot images, which requires the import statement:
+import os
+
+Noting that this report does not state Pass; or Fail, we can add in "; Pass."; or ": Fail." for this report. So it is still possible to use the similar if and else statements as compared to the Java form of the testing.
+
+For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration.
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
