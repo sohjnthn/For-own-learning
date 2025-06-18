@@ -201,6 +201,8 @@ generate_html_report(screenshots)
 
 The opened Google Chrome web browser keeps closing. This should be due to copy and paste mistakes (removing if and else, but keeping the "Pass" message); and due to the Webstorm IDE being unable to detect some WebElements for both the desktop web browser Google Chrome; and the third smartphone application.
 
+Remember to provide unique step_name(s) for each Python file; as only the first time for which the same step-name is used, is reflected in the html report. Do not provide extra duplicate step_name(s), as this causes a lot of time to be wasted.
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
