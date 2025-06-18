@@ -193,6 +193,9 @@ driver2.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Pytho
 
 For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration. As encountered the issue for which testpartialwebsites.py kept running first before testpartialapps.pay was run; even though only testpartialwebsites.py should be run.
 
+At the bottom of each Python file, remember to include the following:
+generate_html_report(screenshots)
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
