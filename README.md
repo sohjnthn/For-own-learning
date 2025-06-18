@@ -148,7 +148,7 @@ Unfortunately, unable to actually run a test with ExtentReport; or pytest, even 
 Therefore, searched online for how to create a html report with the taken screenshot images (while keeping the same screenshot image filename format), which requires the import statement:
 import os
 
-# Note: This single Python method is the original method for creating the screenshot images which are not for a html report.
+// This single Python method is the original method for creating the screenshot images which are not for a html report.**
 def current_datetime_string_generator():
  datetimee = datetime.now()
  print("datetime is: " + datetimee.__str__())
