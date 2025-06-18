@@ -199,7 +199,7 @@ For the Webstorm IDE, Python files for the same package are run together, so to 
 At the bottom of each Python file, remember to include the following:
 generate_html_report(screenshots)
 
-The opened Google Chrome web browser keeps closing. This should be due to copy and paste mistakes.
+The opened Google Chrome web browser keeps closing. This should be due to copy and paste mistakes (removing if and else, but keeping the "Pass" message); and due to the Webstorm IDE being unable to detect some WebElements for both the desktop web browser Google Chrome; and the third smartphone application.
 
 =
 
