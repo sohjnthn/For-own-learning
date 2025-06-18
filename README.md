@@ -192,10 +192,12 @@ The non-report screenshot images' code is still included to be safe.
 datetimeTextString = current_datetime_string_generator()
 driver2.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
 
-For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration. As encountered the issue for which testpartialwebsites.py kept running first before testpartialapps.pay was run; even though only testpartialwebsites.py should be run.
+For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration. As encountered the issue for which testpartialwebsites.py kept running first before testpartialapps.pay was run; even though only testpartialwebsites.py should be run. Please kindly take note to use the Python Unittests in #PythonFilename# configuration for running each file.
 
 At the bottom of each Python file, remember to include the following:
 generate_html_report(screenshots)
+
+Unfortunately, testpartialwebsites.py is encountering the issue for which after it reaches the "Latest" webpage, it keeps loading; or it closes the Google Chrome web browser. This may be due to the personal laptop's memory usage issue. The code which cannot be executed would be removed. Noting that to display the Submit button of the "https://demo.guru99.com/" webpage, the automatically opened Google Chrome web browser window should be manually maximised (although the step still passes as the Submit button is actually displayed).
 
 =
 
