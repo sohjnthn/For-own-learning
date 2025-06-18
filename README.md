@@ -164,6 +164,7 @@ def take_screenshot(driver, step_name):
  driver.save_screenshot(screenshot_path)
  return screenshot_path
 
+// I apologise, the following text's size(s) cannot be reduced.
 def generate_html_report(screenshots):
  report_path = "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Html_Reports\\" + current_datetime_string_generator() + "_test_report.html"
  with open(report_path, "w") as report:
