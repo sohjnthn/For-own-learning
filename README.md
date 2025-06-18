@@ -145,12 +145,53 @@ Found the issue for why the print statements would not be generated if the above
 
 Unfortunately, unable to actually run a test with ExtentReport; or pytest, even though the displayed UI is correct.
 
-Therefore, searched online for how to create a html report with the taken screenshot images, which requires the import statement:
+Therefore, searched online for how to create a html report with the taken screenshot images (while keeping the same screenshot image filename format), which requires the import statement:
 import os
+
+# Note: This single Python method is the original method for creating the screenshot images which are not for a html report.
+def current_datetime_string_generator():
+ datetimee = datetime.now()
+ print("datetime is: " + datetimee.__str__())
+ datetimeeText = datetimee.strftime("%d-%m-%Y %H%M%S.%f")
+ datetimeeTextString = datetimeeText.__str__()
+ print("datetimeText is: " + datetimeeTextString)
+ return datetimeeTextString
+
+def take_screenshot(driver, step_name):
+ datetimeeeText = datetime.now().strftime("%d-%m-%Y %H%M%S.%f")
+ datetimeeeTextString = datetimeeeText.__str__()
+ screenshot_path = os.path.join("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeeeTextString + "_screenshot.png")
+ driver.save_screenshot(screenshot_path)
+ return screenshot_path
+
+def generate_html_report(screenshots):
+ report_path = "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Html_Reports\\" + current_datetime_string_generator() + "_test_report.html"
+ with open(report_path, "w") as report:
+  report.write("<html><head><title>Test Report</title></head><body>")
+  report.write("<h1>Test Report with Screenshots</h1>")
+  for step, screenshot in screenshots.items():
+   report.write(f"<h2>{step}</h2>")
+   report.write(f'<img src="{screenshot}" alt="{step}" style="width:600px;"><br>')
+  report.write("</body></html>")
+ print(f"Report generated: {report_path}")
 
 Noting that this report does not state Pass; or Fail, we can add in "; Pass."; or ": Fail." for this report. So it is still possible to use the similar if and else statements as compared to the Java form of the testing.
 
-For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration.
+if policyManagementText.is_displayed():
+ screenshots["\"Policy management\" is displayed; Pass."] = take_screenshot(driver2, "\"Policy management\" is displayed; Pass.")
+else:
+ screenshots["\"Policy management\" is not displayed; Fail."] = take_screenshot(driver2, "\"Policy management\" is not displayed; Fail.")
+
+Due to missing screenshot images for the html report, added in:
+for i in range(100):
+ print("Waiting for the display to complete the loading.")
+
+The non-report screenshot images' code is still included to be safe.
+
+datetimeTextString = current_datetime_string_generator()
+driver2.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
+
+For the Webstorm IDE, Python files for the same package are run together, so to run each file alone, temporarily drag the non-related files outside of the package folder. This can be seen for editing the Run configuration. As encountered the issue for which testpartialwebsites.py kept running first before testpartialapps.pay was run; even though only testpartialwebsites.py should be run.
 
 =
 
