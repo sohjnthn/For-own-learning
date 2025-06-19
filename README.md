@@ -203,6 +203,20 @@ The opened Google Chrome web browser keeps closing. This should be due to copy a
 
 Remember to provide unique step_name(s) for each Python file; as only the first time for which the same step-name is used, is reflected in the html report. Do not provide extra duplicate step_name(s), as this causes a lot of time to be wasted.
 
+Additionally, given that testpartialapps.py has less code as compared to testpartialwebsites.py (need to edit the indentation once this is carried out), managed to call a method to execute testpartialapps.py after executing testpartialwebsites.py, such that both Python files' respective html report(s) are generated.
+
+By adding the following to the import statements for testpartialwebsites.py:
+from hellocucumber.testpartialapps import test_if_websites_can_call_apps
+
+By adding the method at the bottom of testpartialwebsites.py, directly below testpartialwebsites.py's own 
+generate_html_report(screenshots):
+test_if_websites_can_call_apps()
+
+The code line 
+def test_if_websites_can_call_apps():
+, for testpartialapps.py, is directly below the following line:
+screenshots = {}
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
