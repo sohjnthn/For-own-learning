@@ -219,6 +219,15 @@ screenshots = {}
 
 This is done by executing the Python unit test for testpartialwebsites.py
 
+Note: For the original main Python files, it is not possible to generate a single report. Instead, two separate reports would be generated, as it seems that Python functions from the page Python files (trying to follow the Selenium documentation's page object model), are not allowed to return the screenshots lists for
+screenshots = {}
+
+It is only possible to generate two separate reports, by trying to do so for testpartialapps.py, being separate into two page Python files, each generating their respective reports.
+
+Not really sure for whether this is okay, but would do so.
+
+The Webstorm IDE is able to detect the tests which can be run, if there are functions which start with "test_".
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
