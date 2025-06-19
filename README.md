@@ -217,6 +217,8 @@ def test_if_websites_can_call_apps():
 , for testpartialapps.py, is directly below the following line:
 screenshots = {}
 
+This is done by executing the Python unit test for testpartialwebsites.py
+
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
