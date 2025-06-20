@@ -9,6 +9,9 @@ Microsoft Word file for learning Python for basic automation testing - Without t
 (the file is not visible for the webpage, but can be downloaded):
 https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
 
+Note:
+FirstGroupOfWebsites.java for the IntelliJ IDEA (Community) IDE; and testfirstgroupofwebsites.py for Webstorm IDE, can cause the laptop to have very slow loading, due to high memory usage for the large file size(s).
+
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
 
 The reason for why the original Selenium_Android project's screenshot image filepath was not accepted, was due to missing "_" characters for the required folder.
