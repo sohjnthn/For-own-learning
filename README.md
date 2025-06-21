@@ -233,17 +233,30 @@ screenshots = {}
 
 This is done by executing the Python unit test for testpartialwebsites.py
 
-Note: For the original main Python files, it is not possible to generate a single report. Instead, two separate reports would be generated, as it seems that Python functions from the page Python files (trying to follow the Selenium documentation's page object model), are not allowed to return the screenshots lists for
-screenshots = {}
+Now able to create the two main Python file(s)' two respective Html Reports.
 
-It is only possible to generate two separate reports, by trying to do so for testpartialapps.py, being separate into two page Python files, each generating their respective reports.
+As manually run by clicking on the run (green right-pointing triangle) for the following testpartialswebsites.py function:
+def test_if_websites_can_be_split():
+    driver1 = webdriver.Chrome()
+    first_websites_screenshots = test_first_group_of_websites(driver1)
+    second_websites_screenshots = test_second_group_of_websites(driver1)
+    third_websites_screenshots = test_third_group_of_websites(driver1)
 
-Not really sure for whether this is okay, but would do so.
+    # This is how at least two key-value lists can be merged together into a new list
+    # The key is the step String; and the value is the screenshot (file) path
+    # This is different from a non-key-value list for which
+    # at least two lists can be merged by using
+    # newlist = firstlist + lastlist
+    # for which the list elements can be retrieved by using
+    # newlist[i]
+    # for which i is an int number
+    # like how a list of WebElements's specific element for the int position (which starts from 0)
+    # is retrieved
+    screenshots = {**first_websites_screenshots, **second_websites_screenshots, **third_websites_screenshots}
+    generate_html_report(screenshots)
 
-The Webstorm IDE is able to detect the tests which can be run, if there are functions which start with "test_".
-
-Use the run button of the functions for testing (the related function names should start with "test_"), do not use any run configuration.
-This is to prevent other Python files from the same project from being run first.
+    # Only for executing testpartialapps.py
+    test_if_websites_can_call_apps()
 
 =
 
