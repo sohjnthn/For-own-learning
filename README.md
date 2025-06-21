@@ -2,11 +2,11 @@ This webpage:
 https://github.com/sohjnthn/For-own-learning
 
 Microsoft Word file for learning Java for basic automation testing 
-(the file is not visible for the webpage, but can be downloaded):
+(the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
 
 Microsoft Word file for learning Python for basic automation testing - Without the third smartphone application which is a web browser, as the third smartphone application opens and closes
-(the file is not visible for the webpage, but can be downloaded):
+(the file is not visible for the webpage, but can be downloaded) - 1 Html Report for testing websites; and 1 Html Report for testing the first two smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
 
 Note:
