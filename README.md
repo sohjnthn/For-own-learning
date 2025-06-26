@@ -1,15 +1,16 @@
 This webpage:
 https://github.com/sohjnthn/For-own-learning
 
-Microsoft Word file for learning Java for basic automation testing 
+Microsoft Word file for learning Java for basic automation testing - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
 
-Microsoft Word file for learning Python for basic automation testing - Without the third smartphone application which is a web browser, as the third smartphone application opens and closes
+Microsoft Word file for learning Python for basic automation testing - Without the third smartphone application which is a web browser, as the third smartphone application opens and closes - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 Html Report for testing websites; and 1 Html Report for testing the first two smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
 
-Have tried, having difficulties for Webstorm with JavaScript (firstgroupofwebsites.js) - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, unable to open an Android App for Javascript, and unable to create a html report for JavaScript:
+Have tried, having difficulties for Webstorm with JavaScript - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, unable to open an Android App for Javascript, and unable to create a html report for JavaScript:
+https://github.com/sohjnthn/For-own-learning/blob/main/firstgroupofwebsites.js
 
 Note:
 FirstGroupOfWebsites.java for the IntelliJ IDEA (Community) IDE; and testfirstgroupofwebsites.py for the Webstorm IDE, can cause the laptop to have very slow loading, due to high memory usage for the large file size(s).
