@@ -4,6 +4,9 @@ https://github.com/sohjnthn/For-own-learning
 Resume:
 https://github.com/sohjnthn/For-own-learning/blob/main/Soh%20Jiong%20Hao%20Resume.pdf
 
+LinkedIn:
+https://www.linkedin.com/in/soh-jiong-hao-69aa38186
+
 Microsoft Word file for learning Java for basic automation testing - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
 
