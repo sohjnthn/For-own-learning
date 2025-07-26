@@ -9,7 +9,9 @@ https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
 Microsoft Word file for learning Java for basic automation testing - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
+
 https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
+
 Note:
 If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
