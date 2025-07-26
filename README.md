@@ -9,12 +9,15 @@ https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
 Microsoft Word file for learning Java for basic automation testing - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
-
 https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
+Note:
+If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
 Microsoft Word file for learning Python for basic automation testing - Without the third smartphone application which is a web browser, as the third smartphone application opens and closes - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 Html Report for testing websites; and 1 Html Report for testing the first two smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
+Note:
+The Html Report file (if viewed via a web browser) does not display the screenshot images if the file is opened directly from the WebStorm IDE. Please kindly open the file directly via File Explorer to be able to view the screenshot images for the file. Thank you.
 
 Have tried, having difficulties for Webstorm with JavaScript - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, unable to open an Android App for Javascript, and unable to create a html report for JavaScript:
 https://github.com/sohjnthn/For-own-learning/blob/main/firstgroupofwebsites.js
