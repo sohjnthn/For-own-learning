@@ -218,7 +218,7 @@ def test_first_group_of_websites(driver):
 
     threeWebElementsList = driver.find_elements(By.TAG_NAME, "svg")
     aminoSearchBarMagnifyingGlassButton = threeWebElementsList[0]
-    aminoSearchBar.send_keys("MapleStorySEA Unfunded Amino")
+    # aminoSearchBar.send_keys("MapleStorySEA Unfunded Amino")
     datetimeTextString = current_datetime_string_generator()
     driver.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
     if(aminoSearchBarMagnifyingGlassButton.is_displayed()):
