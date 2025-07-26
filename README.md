@@ -19,8 +19,7 @@ https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Websto
 Note:
 The Html Report file (if viewed via a web browser) does not display the screenshot images if the file is opened directly from the WebStorm IDE. Please kindly open the file directly via File Explorer to be able to view the screenshot images for the file. Thank you.
 
-Have tried, having difficulties for Webstorm with JavaScript - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, unable to open an Android App for Javascript, and unable to create a html report for JavaScript for firstgroupofwebsites.js; and unable to automate Android smartphone applications by using JavaScript:
-
+Have tried, having difficulties for Webstorm with JavaScript - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, able to generate the html report; and unable to open or automate an Android App for Javascript:
 https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20Only%20able%20to%20automate%20desktop%20web%20browser%20Google%20Chrome%2C%20and%20some%20WebElements%20cannot%20be%20detected%20(unable%20to%20automate%20Android%20Apps)..docx
 
 Note:
