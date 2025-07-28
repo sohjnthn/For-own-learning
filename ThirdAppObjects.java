@@ -35,7 +35,7 @@ public class ThirdAppObjects {
     public ThirdAppObjects(AndroidDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
         String oneString = "1";
         // Due to the need to manually click on multiple sign in confirmation buttons
-        for(int i=0; i<9999999; i++) {
+        for(int i=0; i<99999; i++) {
             System.out.println("The app requires time to load.");
         }
 
@@ -120,7 +120,7 @@ public class ThirdAppObjects {
         // unable to detect any more
         // driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Web View\"]"));
         // The loading for UI change is very slow, we try to capture three screenshot images
-        for(int i=0; i<9999999; i++) {
+        for(int i=0; i<99999; i++) {
             System.out.println("A nearby search result would be clicked on.");
         }
 
@@ -134,7 +134,7 @@ public class ThirdAppObjects {
             System.out.println("Fail");
         }
 
-        for(int i=0; i<9999999; i++) {
+        for(int i=0; i<99999; i++) {
             System.out.println("A nearby search result would be clicked on.");
         }
 
@@ -148,7 +148,7 @@ public class ThirdAppObjects {
             System.out.println("Fail");
         }
 
-        for(int i=0; i<9999999; i++) {
+        for(int i=0; i<99999; i++) {
             System.out.println("A nearby search result would be clicked on.");
         }
 
