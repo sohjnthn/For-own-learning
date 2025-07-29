@@ -12,6 +12,9 @@ Microsoft Word file for learning Java for basic automation testing - with the Se
 
 https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
 
+Observation:
+JavaScript can direct to one of the Amino webpages for the Third Android smartphone application (The Microsoft Edge Canary Android smartphone application) for most of the time; but Java is unable to do so.
+
 Note:
 If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
