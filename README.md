@@ -25,6 +25,12 @@ It is better to do so using Java; or Python, for the desktop web browser Google 
 
 4) The JavaScript screenshot images would only be displayed for the Html Report, if the JavaScript screenshot image files are in the same folder as the JavaScript files, and the Html Report.
 
+Therefore, only the latest Java, Python, and JavaScript Html Reports for the desktop web browser Google Chrome have been uploaded; and the latest JavaScript Html Report for the three Android smartphone applications has been uploaded.
+
+A gentle reminder that only the computer, or laptop which generated the html report, can view the report via a web browser, for which the screenshot images are displayed, only if the screenshot image files are still present.
+
+The html report's screenshot images are not displayed, once it is downloaded to another computer, laptop, or smartphone.
+
 Note:
 If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
