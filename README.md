@@ -23,6 +23,8 @@ It is better to do so using Java; or Python, for the desktop web browser Google 
 
 3) Python cannot be used to test the Third Android smartphone application as it is a Hybrid App which has a web browser (the application would open, and then close).
 
+4) The JavaScript screenshot images would only be displayed for the Html Report, if the JavaScript screenshot image files are in the same folder as the JavaScript files, and the Html Report.
+
 Note:
 If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
