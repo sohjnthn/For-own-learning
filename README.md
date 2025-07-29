@@ -7,6 +7,14 @@ https://github.com/sohjnthn/For-own-learning/blob/main/Soh%20Jiong%20Hao%20Resum
 LinkedIn:
 https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
+Good morning, my name is Soh Jiong Hao. I have 5 years of purely manual software testing experience; with non-work experience learning for basic automation testing in terms of Selenium, for Java, Python, and JavaScript, for the desktop web browser Google Chrome, and for the physical personal Android device's smartphone applications.
+
+I am currently looking for a part-time; internship; contract; or permanent manual software tester, or admin assistant job for a monthly salary of $1000 in Singapore.
+
+Thank you.
+
+=
+
 Microsoft Word file for learning Java for basic automation testing - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 ExtentReport for testing websites; and 1 ExtentReport for testing the three smartphone applications:
 
