@@ -14,7 +14,7 @@ https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng
 
 Observation:
 
-1) JavaScript can direct to one of the Amino webpages for the Third Android smartphone application (The Microsoft Edge Canary Android smartphone application) for most of the time; but Java, and Python are unable to do so, for clicking on the search results webpage's WebView directly.
+1) JavaScript can direct to one of the Amino webpages for the Third Android smartphone application which are near the first search result (The Microsoft Edge Canary Android smartphone application) for most of the time; but Java, and Python are unable to do so, for clicking on the search results webpage's WebView directly.
 
 2) JavaScript cannot find the WebElements which need to be found via
 let List = driver.findElements(By.---("---"));
