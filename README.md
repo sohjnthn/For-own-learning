@@ -33,6 +33,22 @@ It is better to do so using Java; or Python, for the desktop web browser Google 
 
 4) The JavaScript screenshot images would only be displayed for the Html Report, if the JavaScript screenshot image files are in the same folder as the JavaScript files, and the Html Report.
 
+5) To be able to overcome the restriction for which JavaScript is unable to interact with a WebElement, which can only be found via
+let List = driver.findElements(By.---("---"));
+
+Given that the element has displayed text; and the text (which would be displayed in white font colour by inspecting the element) can also be found by inspecting the element for a webpage via a web browser.
+
+We should use 
+requiredElement = await driver.findElement(By.xpath("//*[contains(text(), 'Unfunded Training Advice from Level 1 to Level 200?')]"));
+
+So that the element can be clicked on, for example.
+
+requiredElement.click();
+
+6) However, it is not possible to do so for non-text WebElements which need to be identified in the same way, for the same identifier, for an Array of at least two WebElements, for JavaScript.
+
+Will change this accordingly for firstgroupofwebsites.js
+
 Therefore, only the latest Java, Python, and JavaScript Html Reports for the desktop web browser Google Chrome have been uploaded; and the latest JavaScript Html Report for the three Android smartphone applications has been uploaded.
 
 A gentle reminder that only the computer, or laptop which generated the html report, can view the report via a web browser, for which the screenshot images are displayed, only if the screenshot image files are still present.
