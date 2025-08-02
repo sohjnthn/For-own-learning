@@ -45,9 +45,9 @@ So that the element can be clicked on, for example.
 
 requiredElement.click();
 
-This is only applicable for the white text which is directly after ">"; and which is directly before "<". White text with whitespace character(s) before the first letter; and/or after the last letter cannot work.
+This is only applicable for the white text which is directly after ">"; and which is directly before "<". White text with whitespace character(s) before the first letter; and/or after the last letter cannot work (createPostButton is affected).
 
-6) However, it is not possible to do so for non-text WebElements which need to be identified in the same way, for the same identifier, for an Array of at least two WebElements, for JavaScript.
+6) However, it is not possible to do so for non-text WebElements which need to be identified in the same way, for the same identifier, for an Array of at least two WebElements, for JavaScript (aminoHomeIcon is affected).
 
 Will change this accordingly for firstgroupofwebsites.js
 
