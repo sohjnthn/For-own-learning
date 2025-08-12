@@ -9,7 +9,7 @@ https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
 Good morning, my name is Soh Jiong Hao. I have 5 years of purely manual software testing experience; with non-work experience learning for basic automation testing in terms of Selenium, for Java, Python, and JavaScript, for the desktop web browser Google Chrome; and for the physical personal Android device's smartphone applications (with Appium, and html report).
 
-I am currently looking for a part-time; internship; contract; or permanent manual software tester, or admin assistant job for a monthly salary of $1000 in Singapore.
+I am currently looking for a part-time; internship; contract; or permanent manual software tester / (non-sales/marketing) admin assistant; clinic attendant; or data entry / librarian job for a monthly salary of $1000 in Singapore.
 
 Thank you.
 
