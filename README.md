@@ -9,9 +9,19 @@ https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
 Good morning, my name is Soh Jiong Hao. I have 5 years of purely manual software testing experience; with non-work experience learning for basic automation testing in terms of Selenium, for Java, Python, and JavaScript, for the desktop web browser Google Chrome; and for the physical personal Android device's smartphone applications (with Appium, and html report).
 
-I am currently looking for a part-time; internship; contract; or permanent manual software tester / (non-sales/marketing) admin assistant; clinic attendant; or data entry / librarian job for a monthly salary of $1000 in Singapore.
+
 
 Thank you.
+
+=
+
+Note:
+
+On 19 September 2025, testing the Java version for the desktop web browser Google Chrome, has an issue for which an advertisement prevents the detection of the All tab (while at the Search tab webpage), for the Microsoft Bing search results webpage for the search term "MapleStorySEA Unfunded Amino".
+
+The only way to bypass this error is to comment out the code lines for finding and clicking on the Search tab (to go to the Search tab webpage), and the All tab (while at the Search tab webpage). Manually carrying out this does not display the advertisement.
+
+It is still not possible to switch the context to "WEBVIEW_chrome" for testing the third Android smartphone application, for Java (and therefore JavaScript would encounter the same issue).
 
 =
 
