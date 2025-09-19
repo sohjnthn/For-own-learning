@@ -21,7 +21,7 @@ On 19 September 2025, testing the Java version for the desktop web browser Googl
 
 The only way to bypass this error is to comment out the code lines for finding and clicking on the Search tab (to go to the Search tab webpage), and the All tab (while at the Search tab webpage). Manually carrying out this does not display the advertisement.
 
-It is still not possible to switch the context to "WEBVIEW_chrome" for testing the third Android smartphone application, for Java (and therefore JavaScript would encounter the same issue).
+It is still not possible to switch the context to "WEBVIEW_chrome" for testing the third Android smartphone application (the Microsoft Edge Canary smartphone application), for Java (and therefore JavaScript would encounter the same issue).
 
 =
 
