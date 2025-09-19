@@ -14,87 +14,149 @@ Good morning, my name is Soh Jiong Hao. I have 5 years of purely manual software
 I am looking for a part-time; internship; contract; or permanent job, with no required past work experience, for at least a duration of 3 months, for a monthly salary of $1,000 in Singapore.
 
 1)
+
 (Including fresh/entry level)
 Tester/
+
 UAT (User Acceptance Testing)/
+
 Mobile Test Engineer
 
 2) 
 Cleaner
 
 3)
+
 (Non-Food and Beverage/night-shift)
+
 Cashier
 
 4) 
+
 Data entry
 
 5) 
+
 Library
 
 6) 
+
 Bank teller
 
 7)
+
 Intern/
+
 Quick Hiring/
+
 No Interview/
+
 No Experience/
+
 Training Provided/
+
 Entry Level/
+
 Recruit/
+
 Gov/
+
 Govt
 
-8)
+7)
+
 (Non-sales/marketing/roadshow/target/
 KPI/challenge/accounting/
 food and beverage/night-shift)
+
 Administrative/
+
 Admin Assistant/
+
 Admin Executive/
+
 Human Resources/
+
 Personal Assistant/
+
 Executive Assistant/
+
 Job recruiter/
+
 Talent acquisition/
+
 Learning centre admin/
+
 Tuition centre admin/
+
 Centre Administrator/
+
 Education course consultant/
+
 Education advisor/
+
 Customer service officer/
+
 Bookstore assistant/
+
 Customer support executive/
+
 Customer admin officer/
+
 Retail assistant/
+
 Call centre associate/
+
 Customer service associate/
+
 Call centre officer/
+
 Call centre customer service officer/
+
 Call centre agent/
+
 Customer service assistant/
+
 Customer experience associate/
+
 Customer service admin/
+
 Digital ambassador
 
-9) 
+8) 
+
 (Non-sales/marketing/dental/night-shift)
+
 Healthcare/
+
 Healthcare customer service/
+
 Clinic attendant/
+
 Patient service associate/
+
 Ward food service associate/
+
 Clinic assistant/
+
 Pharmacy assistant/
+
 Pharmacy retail assistant/
+
 Healthcare call centre/
+
 Healthcare call agent/
+
 Healthcare reception/
+
 Healthcare porter/
+
 Customer service admin/
+
 Customer service ambassador/
+
 Call centre assistant/
+
 Call centre associate
 
 Thank you.
