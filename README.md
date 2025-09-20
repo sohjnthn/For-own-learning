@@ -166,11 +166,11 @@ Thank you.
 
 Note:
 
-On 19 September 2025, testing the Java version for the desktop web browser Google Chrome, has an issue for which an advertisement prevents the detection of the All tab (while at the Search tab webpage), for the Microsoft Bing search results webpage for the search term "MapleStorySEA Unfunded Amino".
+On 19 September 2025 to 20 September 2025, testing the Java; Python; and JavaScript version for the desktop web browser Google Chrome, has an issue for which a human verification prevents the detection of the All tab (while at the Search tab webpage), for the Microsoft Bing search results webpage for the search term "MapleStorySEA Unfunded Amino".
 
-The only way to bypass this error is to comment out the code lines for finding and clicking on the Search tab (to go to the Search tab webpage), and the All tab (while at the Search tab webpage). Manually carrying out this does not display the advertisement.
+The only way to bypass this error is to comment out the code lines for finding and clicking on the Search tab (to go to the Search tab webpage), and the All tab (while at the Search tab webpage) - This cannot be done by using the driver to go to another webpage; or by clicking on a valid Inspect identifier. Manually carrying out this does not display the human verification.
 
-It is still not possible to switch the context to "WEBVIEW_chrome" for testing the third Android smartphone application (the Microsoft Edge Canary smartphone application), for Java (and therefore JavaScript would encounter the same issue).
+It is still not possible to switch the context to "WEBVIEW_chrome" for testing the third Android smartphone application (the Microsoft Edge Canary smartphone application), for Java; and JavaScript.
 
 =
 
