@@ -172,7 +172,9 @@ The screenshot images are only displayed if the html reports are opened via File
 
 1. For Python, if only a single JavaScript class is run on its own (via Current File), the screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
 
-2. For Python, if we refer to the Google Search - AI Overview, to try to run separate page JavaScript classes via the main JavaScript file, the screenshot images are *not* displayed if the html reports are opened via File Explorer, with a web browser.
+2. For Python, if we refer to the Google Search - AI Overview, to try to run one single page JavaScript classes (any other import and non-import statements for the other two page JavaScript files need to be commented out) via the main JavaScript file, the screenshot images are displayed if the html reports are opened via File Explorer, with a web browser.
+
+3. For Python, if we refer to the Google Search - AI Overview, to try to run separate page JavaScript classes via the main JavaScript file, the screenshot images are *not* displayed if the html reports are opened via File Explorer, with a web browser.
 
 =
 
