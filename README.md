@@ -174,24 +174,41 @@ The screenshot images are only displayed if the html reports are opened via File
 
 2. For Python, if we refer to the Google Search - AI Overview, to try to run one single page JavaScript class (any other import and non-import statements for the other two page JavaScript files need to be commented out) in a single async function via the main JavaScript file, the screenshot images are displayed if the html report is opened via File Explorer, with a web browser.
 
-3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, *only* the screenshot images are displayed if the html report is opened via File Explorer, with a web browser, for the first Page JavaScript file. The second and third page JavaScript classes' html reports do not display the screenshot images (even if for loops are used to attempt to have separate function start timings). Changing the order of running still only displays screenshot images for the first page JavaScript file.
+3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, using for loops would not delay the next function from executing, with all three separate html reports displaying all respective screenshot images.
 
-Since it is not possible to actually separate into parts, it is *not necessary* to create another file such as the following FirstPageWebsite.js.
-
-It is better to create html reports which are able to display all screenshot images.
+Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images, even if the displayed step numbers i are intentionally made to be unique), such as with the following MainWebsites.js
 
 const {By, Builder, Browser, Key} = require('selenium-webdriver');
 const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
+const SecondGroupOfWebsites = require ('./SecondGroupOfWebsites.js');
+const ThirdGroupOfWebsites = require ('./ThirdGroupOfWebsites.js');
+const fs = require("fs");
 
 let driver;
 
-class FirstPageWebsites {
+async function MainWebsites(){
+    driver = await new Builder().forBrowser(Browser.CHROME).build();
+    // This is for the original 39 screenshot images.
+    const FirstGroupOfWebsites = new FirstGroupOfWebsites();
+    // This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
+    const SecondGroupOfWebsites = new SecondGroupOfWebsites();
+    // This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
+    // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
+    const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
 
-    async FirstPageWebsites() {
-        driver = await new Builder().forBrowser(Browser.CHROME).build();
-        const FirstGroupOfWebsites = new FirstGroupOfWebsites();
-    }
+    // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
+    // let title1 = await driver.getTitle(); should be used, so that the first screenshot image of the html report would not be uncaptured
+    // title1's number 1 can be any number
 }
+
+
+
+
+
+
+
+
+
 
 =
 
