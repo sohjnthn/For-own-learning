@@ -199,7 +199,9 @@ async function MainWebsites(){
    const FirstGroupOfWebsites = new FirstGroupOfWebsites();
 
    // Note: The step numbers i for each page JavaScript file should start from 1,
+   
    // so that the screenshot images are displayed (would not be blank) for the html reports from
+   
    // the second page JavaScript file onwards
 
    // Steps 1 to 2: This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
@@ -207,15 +209,19 @@ async function MainWebsites(){
    const SecondGroupOfWebsites = new SecondGroupOfWebsites();
 
    // Steps: 1 to 4: This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
+   
    // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
 
    const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
 
    // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
+   
    // let title1 = await driver.getTitle(); should be used, so that the first screenshot image of the html report would not be uncaptured
+   
    // title1's number 1 can be any number
 
    // Using for loops to try to cause later (the second and third) page JavaScript files to run actually
+   
    // prevents the first page JavaScript file from starting due to the for loop delay
     
    // Screenshot images for the html reports for the second page JavaScript file onwards can be incorrect
