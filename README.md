@@ -187,11 +187,15 @@ const fs = require("fs");
 let driver;
 
 async function MainWebsites(){
+
     driver = await new Builder().forBrowser(Browser.CHROME).build();
+    
     // This is for the original 39 screenshot images.
     const FirstGroupOfWebsites = new FirstGroupOfWebsites();
+    
     // This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
     const SecondGroupOfWebsites = new SecondGroupOfWebsites();
+    
     // This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
     // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
     const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
