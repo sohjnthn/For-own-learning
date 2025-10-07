@@ -227,6 +227,7 @@ async function MainWebsites(){
    // Screenshot images for the html reports for the second page JavaScript file onwards can be incorrect
     
    // Text which are supposed to be entered are sometimes not captured by the screenshot images
+   
 }
 
 =
