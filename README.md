@@ -166,6 +166,14 @@ Thank you.
 
 Note:
 
+On 7 October 2025, noted that viewing the html reports for Java; Python; and JavaScript do not display the screenshot images if viewed directly via the IDEs.
+
+The screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
+
+=
+
+Note:
+
 From 19 September 2025 to 21 September 2025, testing the Java; Python; and JavaScript version for the desktop web browser Google Chrome, has an issue for which a human verification prevents the detection of the All tab (while at the Search tab webpage), for the Microsoft Bing search results webpage for the search term "MapleStorySEA Unfunded Amino".
 
 The only way to bypass this error is to comment out the code lines for finding and clicking on the Search tab (to go to the Search tab webpage), and the All tab (while at the Search tab webpage) - This cannot be done by using the driver to go to another webpage; or by clicking on a valid Inspect identifier. Manually carrying out this does not display the human verification.
