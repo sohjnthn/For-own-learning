@@ -174,7 +174,24 @@ The screenshot images are only displayed if the html reports are opened via File
 
 2. For Python, if we refer to the Google Search - AI Overview, to try to run one single page JavaScript class (any other import and non-import statements for the other two page JavaScript files need to be commented out) in a single async function via the main JavaScript file, the screenshot images are displayed if the html report is opened via File Explorer, with a web browser.
 
-3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, *only* the screenshot images are displayed if the html report is opened via File Explorer, with a web browser, for the first Page JavaScript file. The second and third page JavaScript classes' html reports do not display the screenshot images (even if for loops are used to attempt to have separate function start timings).
+3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, *only* the screenshot images are displayed if the html report is opened via File Explorer, with a web browser, for the first Page JavaScript file. The second and third page JavaScript classes' html reports do not display the screenshot images (even if for loops are used to attempt to have separate function start timings). Changing the order of running still only displays screenshot images for the first page JavaScript file.
+
+Since it is not possible to actually separate into parts, it is *not necessary* to create another file such as the following FirstPageWebsite.js.
+
+It is better to create html reports which are able to display all screenshot images.
+
+const {By, Builder, Browser, Key} = require('selenium-webdriver');
+const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
+
+let driver;
+
+class FirstPageWebsites {
+
+    async FirstPageWebsites() {
+        driver = await new Builder().forBrowser(Browser.CHROME).build();
+        const FirstGroupOfWebsites = new FirstGroupOfWebsites();
+    }
+}
 
 =
 
