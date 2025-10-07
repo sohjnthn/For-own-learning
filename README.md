@@ -176,7 +176,7 @@ The screenshot images are only displayed if the html reports are opened via File
 
 3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, using for loops would not delay the next function from executing, with all three separate html reports displaying all respective screenshot images.
 
-Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images - the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following MainWebsites.js
+Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images - the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following MainWebsites.js (which would not be provided in the related Microsoft Word file for Selenium with JavaScript due to the issues which cannot be resolved).
 
 const {By, Builder, Browser, Key} = require('selenium-webdriver');
 const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
@@ -210,6 +210,10 @@ async function MainWebsites(){
 
    // Using for loops to try to cause later (the second and third) page JavaScript files to run actually
    // prevents the first page JavaScript file from starting due to the for loop delay
+    
+   // Screenshot images for the html reports for the second page JavaScript file onwards can be incorrect
+    
+   // Text which are supposed to be entered are sometimes not captured by the screenshot images
 }
 
 =
