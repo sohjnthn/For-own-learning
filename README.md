@@ -261,11 +261,13 @@ It is better to do so using Java; or Python, for the desktop web browser Google 
 4) The JavaScript screenshot images would only be displayed for the Html Report, if the JavaScript screenshot image files are in the same folder as the JavaScript files, and the Html Report.
 
 5) To be able to overcome the restriction for which JavaScript is unable to interact with a WebElement, which can only be found via
+
 let List = driver.findElements(By.---("---"));
 
 Given that the element has displayed text; and the text (which would be displayed in white font colour by inspecting the element) can also be found by inspecting the element for a webpage via a web browser.
 
 We should use 
+
 requiredElement = await driver.findElement(By.xpath("//*[contains(text(), 'Unfunded Training Advice from Level 1 to Level 200?')]"));
 
 So that the element can be clicked on, for example.
@@ -285,18 +287,22 @@ A gentle reminder that only the computer, or laptop which generated the html rep
 The html report's screenshot images are not displayed, once it is downloaded to another computer, laptop, or smartphone.
 
 Note:
+
 If the "Spark" ExtentReport file is opened via the IntelliJ IDEA IDE, the images are displayed if the file is opened via a web browser. Thank you.
 
 Microsoft Word file for learning Python for basic automation testing - Without the third smartphone application which is a web browser, as the third smartphone application opens and closes - with the Selenium documentation's page object model
 (the file is not visible for the webpage, but can be downloaded) - 1 Html Report for testing websites; and 1 Html Report for testing the first two smartphone applications:
 https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
+
 Note:
 The Html Report file (if viewed via a web browser) does not display the screenshot images if the file is opened directly from the WebStorm IDE. Please kindly open the file directly via File Explorer to be able to view the screenshot images for the file. Thank you.
 
 Have tried, having difficulties for Webstorm with JavaScript - Only able to automate desktop web browser Google Chrome, but some WebElements cannot be detected; if statements or console.log(...) statements are not working, so unable to use conditions to verify that WebElements are displayed, or find the text for non-input text WebElements, unable to use the Selenium documentation's page object model for JavaScript, able to generate the html report; and unable to open or automate an Android App for Javascript:
+
 https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20Only%20able%20to%20automate%20desktop%20web%20browser%20Google%20Chrome%2C%20and%20some%20WebElements%20cannot%20be%20detected%20(unable%20to%20automate%20Android%20Apps)..docx
 
 Note:
+
 FirstGroupOfWebsites.java for the IntelliJ IDEA (Community) IDE; and testfirstgroupofwebsites.py for the Webstorm IDE, can cause the laptop to have very slow loading, due to high memory usage for the large file size(s).
 
 For own learning of IntelliJ IDEA, Java, Selenium, Cucumber, Appium, ExtentReport, and TestNG for finding a manual software tester job in Singapore.
@@ -310,35 +316,54 @@ Similarly, Android Studio, and Eclipse for Java, for the imported IntelliJ IDEA 
 Android Studio, and Eclipse for Java are able to display the build.gradle files, so there is no issue for adding; or removing dependencies.
 
 *
+
 Eclipse for Java cannot be used to test for smartphone applications; as URL is not accepted. Only IntelliJ IDEA, and Android Studio accept URL.
 
 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+
 desiredCapabilities.setCapability("platformName", "Android");
+
 desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+
 desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.afwsamples.testdpc_9.0.12-9012_minAPI21(nodpi)_apkmirror.com.apk");
+
 desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+
 driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
 
 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+
 desiredCapabilities.setCapability("platformName", "Android");
+
 desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+
 desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\ApiDemos-debug.apk");
+
 desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+
 driver2 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
 
 desiredCapabilities = new DesiredCapabilities();
+
 desiredCapabilities.setCapability("platformName", "Android");
+
 desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+
 desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.microsoft.emmx.canary_138.0.3336.0-333600000_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk");
+
 desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
+
 driver3 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+
 *
 
 
 The third App (ThirdAppObjects.java), which is the (Microsoft) Edge Canary App, can only work if all for loops for delaying purposes, to prevent errors which occur from the slow loading and manual clicking of permissions, are provided as
 
 for (int i=0; i < 9999999; i++){
+
   System.out.println("...");
+  
 }
 
 This also ensures that while it is not possible to search for the individual web elements like the desktop Google Chrome web browser for the Microsoft Bing search results webpage for the same search term, the correct search term is clicked on for a very less percentage of tries. As tested with the IntelliJ IDEA project "Selenium_Tutorial" 's testng.xml file for running the hellocucumber package's TestDesktopWebsites.java and TestAndroidApps.java. Android Studio still clicked on the next partialLinkText (weblink).
@@ -370,11 +395,15 @@ All digit characters are to be initialised to '0', as we would be providing all 
 Only if a certain number of characters is reached, then each character would be assigned with the detected character.
 
 Declare the following three lines above each Given/When/Then method of the main Java class, which needs to call a new page Java class's object:
+
 @org.junit.Test
+
 @org.junut.jupiter.api.Test
+
 @org.testng.annotations.Test
 
 Sometimes, the third line of the above may be displayed as:
+
 @Test
 
 Observation:
@@ -432,10 +461,15 @@ Each Given, When, Then line of the feature file can be linked to the correct @Gi
 14. For Webstorm, for testpartialwebsites.py and testpartialapps.py, able to save the screenshot image files by following the Selenium screenshot images, with the screenshot image filenames having the format "dd-mm-yyyy hhmmss.xxxxxx".
     
 datetime = datetime.now()
+
 print("datetime is: " + datetime.__str__())
+
 datetimeText = datetime.strftime("%d-%m-%Y %H%M%S.%f")
+
 datetimeTextString = datetimeText.__str__()
+
 print("datetimeText is: " + datetimeTextString)
+
 driver1.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
 
 One extra repeating of the above code lines is required for the last screenshot image to be taken for a driver for the correct UI; unlike IntelliJ IDEA - Java which does not require this to be done, to display the correct UI.
@@ -447,34 +481,57 @@ Found the issue for why the print statements would not be generated if the above
 Unfortunately, unable to actually run a test with ExtentReport; or pytest, even though the displayed UI is correct.
 
 Therefore, searched online for how to create a html report with the taken screenshot images (while keeping the same screenshot image filename format), which requires the import statement:
+
 import os
 
 // This single Python method is the original method for creating the screenshot images which are not for a html report.**
+
 def current_datetime_string_generator():
+ 
  datetimee = datetime.now()
+ 
  print("datetime is: " + datetimee.__str__())
+ 
  datetimeeText = datetimee.strftime("%d-%m-%Y %H%M%S.%f")
+ 
  datetimeeTextString = datetimeeText.__str__()
+ 
  print("datetimeText is: " + datetimeeTextString)
+ 
  return datetimeeTextString
 
 def take_screenshot(driver, step_name):
+ 
  datetimeeeText = datetime.now().strftime("%d-%m-%Y %H%M%S.%f")
+ 
  datetimeeeTextString = datetimeeeText.__str__()
+ 
  screenshot_path = os.path.join("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeeeTextString + "_screenshot.png")
+ 
  driver.save_screenshot(screenshot_path)
+ 
  return screenshot_path
 
 // I apologise, the following text's size(s) cannot be reduced.
+
 def generate_html_report(screenshots):
+ 
  report_path = "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Html_Reports\\" + current_datetime_string_generator() + "_test_report.html"
+ 
  with open(report_path, "w") as report:
+  
   report.write("<html><head><title>Test Report</title></head><body>")
+  
   report.write("<h1>Test Report with Screenshots</h1>")
+  
   for step, screenshot in screenshots.items():
+   
    report.write(f"<h2>{step}</h2>")
+   
    report.write(f'<img src="{screenshot}" alt="{step}" style="width:600px;"><br>')
+  
   report.write("</body></html>")
+ 
  print(f"Report generated: {report_path}")
 
 Noting that this report does not state Pass; or Fail, we can add in "; Pass."; or ": Fail." for this report. So it is still possible to use the similar if and else statements as compared to the Java form of the testing.
