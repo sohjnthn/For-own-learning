@@ -176,7 +176,7 @@ The screenshot images are only displayed if the html reports are opened via File
 
 3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, using for loops would not delay the next function from executing, with all three separate html reports displaying all respective screenshot images.
 
-Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images, even if the displayed step numbers i are intentionally made to be unique), such as with the following MainWebsites.js
+Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images - the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following MainWebsites.js
 
 const {By, Builder, Browser, Key} = require('selenium-webdriver');
 const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
@@ -188,34 +188,29 @@ let driver;
 
 async function MainWebsites(){
 
- driver = await new Builder().forBrowser(Browser.CHROME).build();
-    
- // This is for the original 39 screenshot images.
- const FirstGroupOfWebsites = new FirstGroupOfWebsites();
-    
- // This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
- const SecondGroupOfWebsites = new SecondGroupOfWebsites();
-    
- // This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
- // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
- const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
+   driver = await new Builder().forBrowser(Browser.CHROME).build();
 
- // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
- // let title1 = await driver.getTitle(); should be used, so that the first screenshot image of the html report would not be uncaptured
- // title1's number 1 can be any number
+   // Steps 1 to 39: This is for the original 39 screenshot images.
+   const FirstGroupOfWebsites = new FirstGroupOfWebsites();
 
- // Using for loops to try to cause later (the second and third) page JavaScript files to run actually
- // prevents the first page JavaScript file from starting due to the for loop delay
+   // Note: The step numbers i for each page JavaScript file should start from 1,
+   // so that the screenshot images are displayed (would not be blank) for the html reports from
+   // the second page JavaScript file onwards
+
+   // Steps 1 to 2: This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
+   const SecondGroupOfWebsites = new SecondGroupOfWebsites();
+
+   // Steps: 1 to 4: This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
+   // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
+   const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
+
+   // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
+   // let title1 = await driver.getTitle(); should be used, so that the first screenshot image of the html report would not be uncaptured
+   // title1's number 1 can be any number
+
+   // Using for loops to try to cause later (the second and third) page JavaScript files to run actually
+   // prevents the first page JavaScript file from starting due to the for loop delay
 }
-
-
-
-
-
-
-
-
-
 
 =
 
