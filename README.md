@@ -179,9 +179,13 @@ The screenshot images are only displayed if the html reports are opened via File
 Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images - the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following *not recommended* MainWebsites.js (which would not be provided in the related Microsoft Word file for Selenium with JavaScript due to the issues which cannot be resolved).
 
 const {By, Builder, Browser, Key} = require('selenium-webdriver');
+
 const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
+
 const SecondGroupOfWebsites = require ('./SecondGroupOfWebsites.js');
+
 const ThirdGroupOfWebsites = require ('./ThirdGroupOfWebsites.js');
+
 const fs = require("fs");
 
 let driver;
@@ -191,6 +195,7 @@ async function MainWebsites(){
    driver = await new Builder().forBrowser(Browser.CHROME).build();
 
    // Steps 1 to 39: This is for the original 39 screenshot images.
+   
    const FirstGroupOfWebsites = new FirstGroupOfWebsites();
 
    // Note: The step numbers i for each page JavaScript file should start from 1,
@@ -198,10 +203,12 @@ async function MainWebsites(){
    // the second page JavaScript file onwards
 
    // Steps 1 to 2: This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
+   
    const SecondGroupOfWebsites = new SecondGroupOfWebsites();
 
    // Steps: 1 to 4: This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
    // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
+
    const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
 
    // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
