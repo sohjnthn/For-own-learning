@@ -170,6 +170,10 @@ On 7 October 2025, noted that viewing the html reports for Java (via Current Fil
 
 The screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
 
+1. For Python, if only a single JavaScript class is run on its own (via Current File), the screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
+
+2. For Python, if we refer to the Google Search - AI Overview, to try to run separate page JavaScript classes via the main JavaScript file, the screenshot images are *not* displayed if the html reports are opened via File Explorer, with a web browser.
+
 =
 
 Note:
