@@ -166,7 +166,7 @@ Thank you.
 
 Note:
 
-On 7 October 2025, noted that viewing the html reports for Java; Python; and JavaScript do not display the screenshot images if viewed directly via the IDEs.
+On 7 October 2025, noted that viewing the html reports for Java (via Current File - TestNG option); Python (via Current File); and JavaScript do not display the screenshot images if viewed directly via the IDEs.
 
 The screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
 
