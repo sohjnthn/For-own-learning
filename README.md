@@ -166,6 +166,68 @@ Thank you.
 
 Note:
 
+On 8 October 2025, tried to return testResults (the JavaScript array for 
+//{ step: stepNameString, screenshot: screenshotFilenameArray[0], status: 'PASS' };) 
+for each of the three page JavaScript files, and tried to create a new report via the main JavaScript file with the following:
+
+const {By, Builder, Browser, Key} = require('selenium-webdriver');
+const FirstGroupOfWebsites = require ('./FirstGroupOfWebsites.js');
+const SecondGroupOfWebsites = require ('./SecondGroupOfWebsites.js');
+const ThirdGroupOfWebsites = require ('./ThirdGroupOfWebsites.js');
+const fs = require("fs");
+
+let driver;
+
+async function MainWebsites(){
+
+   driver = await new Builder().forBrowser(Browser.CHROME).build();
+
+   // Steps 1 to 39: This is for the original 39 screenshot images.
+   const FirstGroupOfWebsites = new FirstGroupOfWebsites();
+
+   // Note: The step numbers i for each page JavaScript file should start from 1,
+   // so that the screenshot images are displayed (would not be blank) for the html reports from
+   // the second page JavaScript file onwards
+
+   // Steps 1 to 2: This is only for reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with the driver
+   const SecondGroupOfWebsites = new SecondGroupOfWebsites();
+
+   // Steps: 1 to 4: This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with the driver,
+   // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
+   const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
+
+   // For each page JavaScript file, only immediately after the first driver.get("..."); statement,
+   // let title1 = await driver.getTitle(); should be used, so that the first screenshot image of the html report would not be uncaptured
+   // title1's number 1 can be any number
+
+   // Using for loops to try to cause later (the second and third) page JavaScript files to run actually
+   // prevents the first page JavaScript file from starting due to the for loop delay
+
+   // Screenshot images for the html reports for the second page JavaScript file onwards can be incorrect
+
+   // Text which are supposed to be entered are sometimes not captured by the screenshot images
+
+   const testResults = [...FirstGroupOfWebsites, ...SecondGroupOfWebsites, ...ThirdGroupOfWebsites];
+
+   let htmlContent = '<html><body><h1>Test Report</h1>';
+   testResults.forEach(result => {
+   htmlContent += `<div>
+   <p>Step: ${result.step}</p>
+   <p>Status: ${result.status}</p>
+   <img src="${result.screenshot}" alt="Screenshot" width="300">
+   </div>`;
+   });
+   htmlContent += '</body></html>';
+   fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
+   console.log('Report generated: test-report.html');
+}
+
+Unfortunately, only three (not four) html reports are created. They seem to be stable now. The second and third html reports finish executing first, and only display the screenshot images if the first step number i starts from 1 (have tried, even with i not starting from 1, such that the screenshot images are displayed blank, only three; and not four html reports are generated).
+
+=
+
+Note:
+
 On 7 October 2025, noted that viewing the html reports for Java (via Current File - TestNG option); Python (via Current File); and JavaScript do not display the screenshot images if viewed directly via the IDEs.
 
 The screenshot images are only displayed if the html reports are opened via File Explorer, with a web browser.
