@@ -268,6 +268,9 @@ statements for the three Page object files).
 
 We can only guarantee that if the commented out lines are uncommented, they do not affect the automation testing.
 
+Have tried, as the physical Android device smartphone applications would keep opening repeatedly with the default starting screens, so the entire testing fails
+(should continue to use one single page JavaScript file to test all three smartphone applications). 
+
 =
 
 Note:
