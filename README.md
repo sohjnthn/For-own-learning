@@ -188,6 +188,10 @@ async function MainWebsites(){
 
    driver = await new Builder().forBrowser(Browser.CHROME).build();
 
+   // *Need to run multiple times as the html reports can be incorrect due to overwriting of screenshot images;
+   
+   // and due to screenshot images being blank if Steps i do not start from 1 for the page JavaScript files.*
+
    // Steps 1 to 39: This is for the original 39 screenshot images.
    
    const FirstGroupOfWebsites = new FirstGroupOfWebsites();
