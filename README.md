@@ -224,31 +224,31 @@ async function MainWebsites(){
 
    // Does nothing (the fourth html report is not generated)
    
-   //const testResults = [...FirstGroupOfWebsites, ...SecondGroupOfWebsites, ...ThirdGroupOfWebsites];
+   // const testResults = [...FirstGroupOfWebsites, ...SecondGroupOfWebsites, ...ThirdGroupOfWebsites];
 
    // Does nothing (the fourth html report is not generated)
    
-   //let htmlContent = '<html><body><h1>Test Report</h1>';
+   // let htmlContent = '<html><body><h1>Test Report</h1>';
    
-   //testResults.forEach(result => {
+   // testResults.forEach(result => {
    
-   //htmlContent += `<div>
+   // htmlContent += `<div>
    
-   //<p>Step: ${result.step}</p>
+   // <p>Step: ${result.step}</p>
    
-   //<p>Status: ${result.status}</p>
+   // <p>Status: ${result.status}</p>
    
-   //<img src="${result.screenshot}" alt="Screenshot" width="300">
+   // <img src="${result.screenshot}" alt="Screenshot" width="300">
    
-   //</div>`;
+   // </div>`;
    
-   //});
+   // });
    
-   //htmlContent += '</body></html>';
+   // htmlContent += '</body></html>';
 
-   //fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
+   // fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
    
-   //console.log('Report generated: test-report.html');
+   // console.log('Report generated: test-report.html');
 
 }
 
@@ -278,7 +278,9 @@ The screenshot images are only displayed if the html reports are opened via File
 
 3. For Python, if we refer to the Google Search - AI Overview, to try to run the three separate page JavaScript classes in a single async function via the main JavaScript file, the three Google Chrome web browser windows (each with one single web browser tab) are run at the same time, using for loops would not delay the next function from executing, with all three separate html reports displaying all respective screenshot images.
 
-Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, but with incorrect screenshot images - the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following *not recommended* MainWebsites.js (which would not be provided in the related Microsoft Word file for Selenium with JavaScript due to the issues which cannot be resolved).
+Since it is not possible to actually possible to use JavaScript to separate into sequential parts, then it is only possible to use this method to run separate test steps or test cases at the same time (parallelly, the step numbers i for each JavaScript file need to start with i, so that the screenshot images for the html reports from the second page JavaScript file onwards would not be blank), such as with the following MainWebsites.js (which would not be provided in the related Microsoft Word file for Selenium with JavaScript due to the issues which cannot be resolved).
+
+*Note: For doing so parallelly, the screenshot images can sometimes be incorrect for the html reports due to overwriting which cannot be controlled; so multiple tries are required with manual visual checking of the screenshot images.*
 
 const {By, Builder, Browser, Key} = require('selenium-webdriver');
 
