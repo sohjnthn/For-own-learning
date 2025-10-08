@@ -207,22 +207,31 @@ async function MainWebsites(){
 
    // Text which are supposed to be entered are sometimes not captured by the screenshot images
 
-   const testResults = [...FirstGroupOfWebsites, ...SecondGroupOfWebsites, ...ThirdGroupOfWebsites];
+   // Does nothing (the fourth html report is not generated)
+   //const testResults = [...FirstGroupOfWebsites, ...SecondGroupOfWebsites, ...ThirdGroupOfWebsites];
 
-   let htmlContent = '<html><body><h1>Test Report</h1>';
-   testResults.forEach(result => {
-   htmlContent += `<div>
-   <p>Step: ${result.step}</p>
-   <p>Status: ${result.status}</p>
-   <img src="${result.screenshot}" alt="Screenshot" width="300">
-   </div>`;
-   });
-   htmlContent += '</body></html>';
-   fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
-   console.log('Report generated: test-report.html');
+   // Does nothing (the fourth html report is not generated)
+   //let htmlContent = '<html><body><h1>Test Report</h1>';
+   //testResults.forEach(result => {
+   //htmlContent += `<div>
+   //<p>Step: ${result.step}</p>
+   //<p>Status: ${result.status}</p>
+   //<img src="${result.screenshot}" alt="Screenshot" width="300">
+   //</div>`;
+   //});
+   //htmlContent += '</body></html>';
+   //fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
+   //console.log('Report generated: test-report.html');
 }
 
 Unfortunately, only three (not four) html reports are created. They seem to be stable now. The second and third html reports finish executing first, and only display the screenshot images if the first step number i starts from 1 (have tried, even with i not starting from 1, such that the screenshot images are displayed blank, only three; and not four html reports are generated).
+
+Therefore, the new JavaScript files and reports would be uploaded, and the non-working code is commented out (including the commented out 
+// Does nothing (the fourth html report is not generated)
+// return testResults;
+statements for the three Page object files).
+
+We can only guarantee that if the commented out lines are uncommented, they do not affect the automation testing.
 
 =
 
