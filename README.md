@@ -166,7 +166,7 @@ Thank you.
 
 Note:
 
-On 12 October 2025 removed MainWebsites.js (which seems to be the cause of the incorrect screenshot images issue); ran the second and third page JavaScript files for the desktop web browser Google Chrome directly from the related first page JavaSCript file, which did not encounter incorrect screenshot images for the second and third page JavaScript files' html reports.
+On 12 October 2025, removed MainWebsites.js (which seems to be the cause of the incorrect screenshot images issue); ran the second and third page JavaScript files for the desktop web browser Google Chrome directly from the related first page JavaSCript file, which did not encounter incorrect screenshot images for the second and third page JavaScript files' html reports.
 
 Even though it is stated that there are initialisation errors, the html reports do not have issues.
 
