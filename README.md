@@ -166,6 +166,19 @@ Thank you.
 
 Note:
 
+On 12 October 2025 removed Main.js; ran the second and third page JavaScript files for the desktop web browser Google Chrome directly from the related first page JavaSCript file, which did not encounter incorrect screenshot images for the second and third page JavaScript files' html reports.
+
+Even though it is stated that there are initialisation errors, the html reports do not have issues.
+
+The Step names for each of the all three page JavaScript files would still start from Step i, for which i starts from 1.
+
+Noted that it is not possible to run all files parallelly together, if the first page JavaScript file only runs the second page JavaScript file; and the second page JavaScript files.
+
+
+=
+
+Note:
+
 On 8 October 2025, tried to return testResults (the JavaScript array for 
 
 //{ step: stepNameString, screenshot: screenshotFilenameArray[0], status: 'PASS' };) 
