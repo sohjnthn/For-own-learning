@@ -7,7 +7,33 @@ https://github.com/sohjnthn/For-own-learning/blob/main/Soh%20Jiong%20Hao%20Resum
 LinkedIn:
 https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
-Good morning, my name is Soh Jiong Hao. I have 5 years of purely manual software testing experience; with non-work experience learning for basic automation testing in terms of Selenium, for Java, Python, and JavaScript, for the desktop web browser Google Chrome; and for the physical personal Android device's smartphone applications (with Appium, and html report).
+=
+
+Good morning, my name is Jiong Hao. I am a 5-year manual software tester; and 2-month hardware tester.
+
+For my latest past work for manual software testing, for the client company Prudential, the project PRUForce@Pulse is for the web browser and mobile applications, which are used by the insurance agents, to add leads to their campaigns.
+
+This requires the use of MongoDB for verifying the test records; and LifeAsia for inquiring the test insurance agent, client, and insurance proposal or policy details.
+
+The JIRA numbers, which are the JIRA Story, Requirement, or Epic by the Business Analysts, are distributed by the QA Lead to the QA Team. As a QA, the Microsoft Excel test plan files are created.
+
+For each test case, the Microsoft Excel test results files, which consist of the test steps and the test screenshot images, are uploaded via the JIRA X-Ray plugin, to the JIRA Test - Execute Test webpage - Execution Evidence section.
+
+If a defect is found, a JIRA Test Defect is raised to the related developer. After the defect is resolved, the affected test step would be retested to be pass.
+
+The QA Lead may request for the QA to create the Microsoft Word knowledge transfer files to explain the past tested JIRA numbers' test steps and test screenshot images, to the rest of the QA Team.
+
+For my non-work experience, I have learnt basic automation testing with IntelliJ IDEA, Java, Selenium with the Selenium documentation's page object model, Cucumber, Appium, ExtentReport, TestNG, ChromeDriver, and AndroidDriver; as well as with Webstorm, Python, webdriver.Chrome(), webdriver.Remote(...), and html report by manually running the Python "test_" function.
+
+For the client company DBS, the Intraday Liquidity Management System project, is for using the Finacle (SG) functions to find the monthly repayment amount and the monthly interest, based on the loan tenor or the loan period; and the amount which is owed, which may involve using a collateral such as a property or a vehicle. Also, the ACCP Regional Initiate project is for the Maker and Checker process for Audit confirmation, for Singapore, India, and Indonesia. Moreover, the Singapore - Intelligent Process Automation project is for the processing of the customer's loan requests.
+
+For the client company UOB, the Recycler + Coin Side Car project is for the coin deposit machine; the TMRW project is for the Thailand and Indonesia customers to set their budget; and the GEB NextGen - HK Release project is for the Hong Kong customers to carry out amount transfers and payment of bills by using simplified Chinese. Also, the My Wealth Planner project is for customers to purchase investment products based on their financial situation, and risk appetite. Moreover, the eComm project is for the Thailand and Indonesia customers to be provide their personal and employment details for onboarding, with the assistance of a live agent.
+
+For the company Cube Payment, I mainly carried out hardware testing for UOB; and GPAP credit card terminal parameters.
+
+In the future, I wish to be able to contribute to your company, and to be able to gain more experience.
+
+Thank you.
 
 =
 
