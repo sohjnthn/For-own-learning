@@ -29,7 +29,7 @@ For the client company DBS, the Intraday Liquidity Management System project, is
 
 For the client company UOB, the Recycler + Coin Side Car project is for the coin deposit machine; the TMRW project is for the Thailand and Indonesia customers to set their budget; and the GEB NextGen - HK Release project is for the Hong Kong customers to carry out amount transfers and payment of bills by using simplified Chinese. Also, the My Wealth Planner project is for customers to purchase investment products based on their financial situation, and risk appetite. Moreover, the eComm project is for the Thailand and Indonesia customers to be provide their personal and employment details for onboarding, with the assistance of a live agent.
 
-For the company Cube Payment, I mainly carried out hardware testing for UOB; and GPAP credit card terminal parameters.
+For the company Cube Payment, the work was mainly for carrying out hardware testing for UOB; and GPAP credit card terminal parameters.
 
 In the future, I wish to be able to contribute to your company, and to be able to gain more experience.
 
