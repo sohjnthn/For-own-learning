@@ -55,25 +55,25 @@ Software Test/
 
 Quality Assurance
 
-2)
+[2]
 
 (Non-Food and Beverage/night-shift)
 
 Cashier
 
-3) 
+[3]
 
 Data entry
 
-4) 
+[4]
 
 Library
 
-5) 
+[5]
 
 Bank teller
 
-6)
+[6]
 
 (Non-warehouse/logistics/charity ambassador)
 
@@ -129,7 +129,7 @@ Urgent/
 
 Part Time
 
-7)
+[7]
 
 (Non-sales/marketing/roadshow/target/
 KPI/challenge/accounting/
@@ -197,7 +197,7 @@ Digital ambassador/
 
 SG Ambassador
 
-8) 
+[8]
 
 (Non-sales/marketing/night-shift)
 
