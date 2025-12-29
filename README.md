@@ -44,110 +44,199 @@ Updated job search list:
 I am looking for a part-time; internship; contract; or permanent job, with no required past work experience, for at least a duration of 3 months, for a monthly salary of $2,000 in Singapore.
 
 1)
+
 (Including fresh/entry level)
+
 Tester/
+
 UAT (User Acceptance Testing)/
+
 Software Test/
+
 Quality Assurance
 
 2)
+
 (Non-Food and Beverage/night-shift)
+
 Cashier
 
 3) 
+
 Data entry
 
 4) 
+
 Library
 
 5) 
+
 Bank teller
 
 6)
+
 (Non-warehouse/logistics/charity ambassador)
+
 Min A (Minimum A Levels)/
+
 Min Diploma (Minimum Diploma)/
+
 Intern/
+
 Quick Hiring/
+
 No Interview/
+
 No Experience/
+
 Training Provided/
+
 Entry Level/
+
 Recruit/
+
 Consulting/
+
 Solutions/
+
 Career/
+
 Talent/
+
 Hire/
+
 Job/
+
 Gov/
+
 Govt/
+
 Government/
+
 Month contract/
+
 Year contract/
+
 Temp/
+
 Perm/
+
 Office Hours/
+
 Immediate/
+
 Urgent/
+
 Part Time
 
 7)
+
 (Non-sales/marketing/roadshow/target/
 KPI/challenge/accounting/
 food and beverage/night-shift)
+
 Administrative/
+
 Admin Assistant/
+
 Admin Executive/
+
 Human Resources/
+
 Personal Assistant/
+
 Executive Assistant/
+
 Job recruiter/
+
 Talent acquisition/
+
 Learning centre admin/
+
 Tuition centre admin/
+
 Centre Administrator/
+
 Education course consultant/
+
 Education advisor/
+
 Teacher/
+
 School/
+
 Education/
+
 Customer service officer/
+
 Bookstore assistant/
+
 Customer support executive/
+
 Customer admin officer/
+
 Retail assistant/
+
 Call centre associate/
+
 Customer service associate/
+
 Call centre officer/
+
 Call centre customer service officer/
+
 Call centre agent/
+
 Customer service assistant/
+
 Customer experience associate/
+
 Customer service admin/
+
 Digital ambassador/
+
 SG Ambassador
 
 8) 
+
 (Non-sales/marketing/night-shift)
+
 Healthcare/
+
 Hospital/
+
 Polyclinic/
+
 Healthcare customer service/
+
 Clinic attendant/
+
 Patient service associate/
+
 Ward food service associate/
+
 Clinic assistant/
+
 Dental assistant/
+
 Pharmacy assistant/
+
 Pharmacy retail assistant/
+
 Healthcare call centre/
+
 Healthcare call agent/
+
 Healthcare reception/
+
 Healthcare porter/
+
 Customer service admin/
+
 Customer service ambassador/
+
 Call centre assistant/
+
 Call centre associate
 
 Thank you.
