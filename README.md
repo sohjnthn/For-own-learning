@@ -77,6 +77,8 @@ Bank teller
 
 (Non-warehouse/logistics/charity ambassador)
 
+Grit/
+
 Min A (Minimum A Levels)/
 
 Min Diploma (Minimum Diploma)/
