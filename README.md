@@ -43,86 +43,152 @@ Updated job search list:
 
 I am looking for a part-time; internship; contract; or permanent job, with no required past work experience, for at least a duration of 3 months, for a monthly salary of $2,000 in Singapore.
 
-1)
+[1]
+
 (Including fresh/entry level)
+
 Tester/
+
 UAT (User Acceptance Testing)/
+
 Software Test/
+
 Quality Assurance
 
-2) 
+[2]
+
 Data entry
 
-3) 
+[3]
+
 Library
 
-4) 
+[4]
+
 Bank teller
 
-5)
+[5]
+
 (Non-retail/sales/warehouse/logistics/charity ambassador)
+
 Grit/
+
 Min A (Minimum A Levels)/
+
 Min Diploma (Minimum Diploma)/
+
 Intern/
+
 Quick Hiring/
+
 No Interview/
+
 No Experience/
+
 Training Provided/
+
 Entry Level/
+
 Recruit/
+
 Consulting/
+
 Solutions/
+
 Career/
+
 Talent/
+
 Hire/
+
 Job/
+
 Gov/
+
 Govt/
+
 Government/
+
 Month contract/
+
 Year contract/
+
 Temp/
+
 Perm/
+
 Office Hours/
+
 Immediate/
+
 Urgent/
+
 Part Time
 
-6)
+[6]
+
 (Non-retail/sales/marketing/roadshow/target/
 KPI/challenge/accounting/
 food and beverage/night-shift)
+
 Administrative/
+
 Admin Assistant/
+
 Admin Executive/
+
 Human Resources/
+
 Personal Assistant/
+
 Executive Assistant/
+
 Job recruiter/
+
 Talent acquisition/
+
 Learning centre admin/
+
 Tuition centre admin/
+
 Centre Administrator/
+
 Education course consultant/
+
 Education advisor/
+
 Teacher/
+
 School/
+
 Education/
+
 SG Ambassador
 
-7) 
+[7]
+
 (Non-retail/sales/marketing/night-shift)
+
 Healthcare/
+
 Hospital/
+
 Polyclinic/
+
 Healthcare customer service/
+
 Clinic attendant/
+
 Patient service associate/
+
 Ward food service associate/
+
 Clinic assistant/
+
 Dental assistant/
+
 Healthcare reception/
+
 Healthcare porter
 
 Thank you.
