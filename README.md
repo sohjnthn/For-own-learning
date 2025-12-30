@@ -89,10 +89,6 @@ Training Provided/
 
 Entry Level/
 
-Recruit/
-
-Consulting/
-
 Solutions/
 
 Career/
@@ -137,15 +133,9 @@ Admin Assistant/
 
 Admin Executive/
 
-Human Resources/
-
 Personal Assistant/
 
 Executive Assistant/
-
-Job recruiter/
-
-Talent acquisition/
 
 Learning centre admin/
 
