@@ -173,6 +173,8 @@ Hospital/
 
 Polyclinic/
 
+Usher/
+
 Healthcare customer service/
 
 Clinic attendant/
