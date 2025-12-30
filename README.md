@@ -51,6 +51,8 @@ Test/
 
 Associate Test/
 
+Manual/
+
 Manual Test/
 
 Tester/
