@@ -127,6 +127,8 @@ Part Time
 KPI/challenge/accounting/
 food and beverage/night-shift)
 
+Attraction/
+
 Administrative/
 
 Admin Assistant/
