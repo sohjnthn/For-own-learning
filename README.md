@@ -117,7 +117,11 @@ Year contract/
 
 Temp/
 
+Temporary/
+
 Perm/
+
+Permanent/
 
 Office Hours/
 
@@ -137,6 +141,8 @@ Attraction/
 
 Administrative/
 
+Admin/
+
 Admin Assistant/
 
 Admin Executive/
@@ -144,6 +150,8 @@ Admin Executive/
 Personal Assistant/
 
 Executive Assistant/
+
+Centre admin/
 
 Learning centre admin/
 
@@ -177,13 +185,21 @@ Usher/
 
 Healthcare customer service/
 
+Clinic/
+
 Clinic attendant/
+
+Patient/
+
+Patient relationship officer/
 
 Patient service associate/
 
 Ward food service associate/
 
 Clinic assistant/
+
+Dental/
 
 Dental assistant/
 
