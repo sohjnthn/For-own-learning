@@ -47,6 +47,12 @@ I am looking for a part-time; internship; contract; or permanent job, with no re
 
 (Including fresh/entry level)
 
+Test/
+
+Associate Test/
+
+Manual Test/
+
 Tester/
 
 UAT (User Acceptance Testing)/
