@@ -141,6 +141,8 @@ food and beverage/night-shift)
 
 Attraction/
 
+Administrator/
+
 Administrative/
 
 Admin/
@@ -164,8 +166,6 @@ Centre Administrator/
 Education course consultant/
 
 Education advisor/
-
-Teacher/
 
 School/
 
@@ -198,6 +198,10 @@ Clinic attendant/
 Patient/
 
 Patient relationship officer/
+
+PSA/
+
+Patient service assistant/
 
 Patient service associate/
 
