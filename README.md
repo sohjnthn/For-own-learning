@@ -61,6 +61,10 @@ UAT (User Acceptance Testing)/
 
 Software Test/
 
+QA/
+
+Quality Analyst/
+
 Quality Assurance
 
 [2]
