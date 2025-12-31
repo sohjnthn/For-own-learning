@@ -187,6 +187,8 @@ Billing Assistant Gov Healthcare/
 
 Usher/
 
+Medical/
+
 Healthcare customer service/
 
 Clinic/
