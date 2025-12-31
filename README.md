@@ -183,6 +183,8 @@ Hospital/
 
 Polyclinic/
 
+Billing Assistant Gov Healthcare/
+
 Usher/
 
 Healthcare customer service/
