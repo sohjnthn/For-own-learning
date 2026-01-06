@@ -20,6 +20,18 @@ https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20On
 
 =
 
+Things to take note of before using the above Java/Python/JavaScript code:
+
+[1]
+
+Microsoft Bing search results would have an error once we navigate to the Search tab, as the manual check prevents automation, so please kindly comment out the related code.
+
+[2]
+
+Amino has shut down in December 2025, so its webpages cannot be viewed for both the related desktop web browser; and Microsoft Edge Canary code, so please kindly comment out the related code.
+
+=
+
 Updated interview introduction text:
 
 "Good morning, my name is Jiong Hao. I am a 5-year manual software tester; and 2-month hardware tester.
