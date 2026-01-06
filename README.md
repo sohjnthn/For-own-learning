@@ -28,7 +28,7 @@ Microsoft Bing search results would have an error once we navigate to the Search
 
 [2]
 
-Amino has shut down in December 2025, so its webpages cannot be viewed for both the related desktop web browser; and Microsoft Edge Canary code, so please kindly comment out the related code.
+Amino has shut down in December 2025, so its webpages cannot be viewed for both the related desktop web browser; and the Microsoft Edge Canary smartphone application code, so please kindly comment out the related code.
 
 =
 
