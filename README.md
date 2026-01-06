@@ -9,6 +9,17 @@ https://www.linkedin.com/in/soh-jiong-hao-69aa38186
 
 =
 
+This is for the IntelliJ IDEA (Community) IDE, for Java, Selenium, and ExtentReport:
+https://github.com/sohjnthn/For-own-learning/blob/main/10%20June%202025%20testng.xml%20to%20combine%20both%20feature%20files.docx
+
+This is for the Webstorm IDE, for Python, and html report:
+https://github.com/sohjnthn/For-own-learning/blob/main/20%20June%202025%20Webstorm%20Test%20Partially%20With%20Html%20Report%20only%20being%20generated%20if%20WebElement(s)%20can%20be%20found%20-%20Websites%20calls%20Apps.docx
+
+This is for the Webstorm IDE, for JavaScript, and html report, for only the desktop web browser, with some WebElements not being found - excluding the WebElements which can be identified with the displayed text, which is immediately after ">", and which is immediately before "<", when inspecting the WebElement for a webpage via a web browser (unable to use the Selenium documentation's page object model as the functions can only be async); able to automate the Android smartphone applications:
+https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20Only%20able%20to%20automate%20desktop%20web%20browser%20Google%20Chrome%2C%20and%20some%20WebElements%20cannot%20be%20detected%3B%20able%20to%20automate%20Android%20Apps.docx
+
+=
+
 Updated interview introduction text:
 
 "Good morning, my name is Jiong Hao. I am a 5-year manual software tester; and 2-month hardware tester.
