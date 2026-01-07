@@ -94,17 +94,11 @@ Quality Assurance
 
 [2]
 
-Data entry
-
-[3]
+Data entry/
 
 Library
 
-[4]
-
-Bank teller
-
-[5]
+[3]
 
 (Non-retail/sales/warehouse/logistics/charity ambassador)
 
@@ -168,11 +162,10 @@ Urgent/
 
 Part Time
 
-[6]
+[4]
 
-(Non-retail/sales/marketing/roadshow/target/
-KPI/challenge/accounting/
-food and beverage/night-shift)
+(Non-retail/sales/marketing/roadshow/target/KPI/commission/challenge/
+accounting/food and beverage/night-shift)
 
 Administrator/
 
@@ -184,29 +177,7 @@ Admin Assistant/
 
 Admin Executive/
 
-Personal Assistant/
-
-Executive Assistant/
-
-Centre admin/
-
-Learning centre admin/
-
-Tuition centre admin/
-
-Centre Administrator/
-
-Education course consultant/
-
-Education advisor/
-
-School/
-
-Education/
-
-SG Ambassador
-
-[7]
+[5]
 
 (Non-retail/sales/marketing/night-shift)
 
