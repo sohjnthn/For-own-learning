@@ -165,7 +165,8 @@ Part Time
 [4]
 
 (Non-retail/sales/marketing/roadshow/target/KPI/commission/challenge/
-accounting/food and beverage/night-shift)
+accounting/food and beverage/
+night-shift)
 
 Administrator/
 
