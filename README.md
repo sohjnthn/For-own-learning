@@ -100,7 +100,7 @@ Library
 
 [3]
 
-(Non-retail/sales/warehouse/logistics/charity ambassador)
+(Non-retail/sales/warehouse/ logistics/charity ambassador)
 
 Grit/
 
