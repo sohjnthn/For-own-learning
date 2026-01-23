@@ -1,5 +1,8 @@
-This webpage:
+The webpage for all files:
 https://github.com/sohjnthn/For-own-learning
+
+Readme.md file weblink (this webpage):
+https://github.com/sohjnthn/For-own-learning/blob/main/README.md
 
 Resume:
 https://github.com/sohjnthn/For-own-learning/blob/main/Soh%20Jiong%20Hao%20Resume.pdf
