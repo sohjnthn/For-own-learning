@@ -1,3 +1,13 @@
+My name is Jiong Hao. I am a 5-year purely manual software tester; and a 2-month hardware tester in Singapore.
+
+This webpage is for the two-month non-work experience learning for basic Selenium automation testing learning, for desktop web browser and Android smartphone applications, for Java, Python, and JavaScript.
+
+Please kindly refer to the following for the details.
+
+Thank you.
+
+=
+
 The webpage for all files:
 https://github.com/sohjnthn/For-own-learning
 
