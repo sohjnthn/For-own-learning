@@ -14,6 +14,9 @@ https://github.com/sohjnthn/For-own-learning
 Readme.md file weblink (this webpage):
 https://github.com/sohjnthn/For-own-learning/blob/main/README.md
 
+Reference screenshot images for showing how to use the Appium Inspector weblink https://inspector.appiumpro.com/ , in order to locate the xpath identifier for "API Demos" Android smartphone application, for the App/Search/Invoke Search screen - Prefill query text field, as an example:
+https://github.com/sohjnthn/For-own-learning/commit/4bfb7ea5c605483e4edc2ad99070332412b80469
+
 Resume:
 https://github.com/sohjnthn/For-own-learning/blob/main/Soh%20Jiong%20Hao%20Resume.pdf
 
