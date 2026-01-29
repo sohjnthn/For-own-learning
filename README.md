@@ -37,7 +37,10 @@ https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20On
 =
 
 Things to take note of before using the above Java/Python/JavaScript code:
-([1]
+
+(
+
+[1]
 
 For IntelliJ IDEA - Java, run the main Java file "TestAndroidApps.java" with the TestNG configuration, as the Gradle configuration has issues.
 
@@ -49,7 +52,9 @@ Run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py'
 
 [3]
 
-It is safe to directly run the the correct JavaScript file (testpartialwebsites.js; if not testapps.js) directly with the Current File option.)
+It is safe to directly run the the correct JavaScript file (testpartialwebsites.js; if not testapps.js) directly with the Current File option.
+
+)
 
 [1]
 
