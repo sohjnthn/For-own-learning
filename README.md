@@ -37,7 +37,9 @@ https://github.com/sohjnthn/For-own-learning/blob/main/26%20July%202025%20-%20On
 =
 
 Things to take note of before using the above Java/Python/JavaScript code
-(For IntelliJ IDEA - Java, run the main Java file with the TestNG configuration, as the Gradle configuration has issues):
+(1. For IntelliJ IDEA - Java, run the main Java file with the TestNG configuration, as the Gradle configuration has issues.
+
+2. Run the main Python file's function which starts with "def test_...():", as running wih the Current File option has issues.):
 
 [1]
 
