@@ -42,17 +42,17 @@ Things to take note of before using the above Java/Python/JavaScript code:
 
 [1]
 
-For IntelliJ IDEA - Java, run the main Java file "TestAndroidApps.java" with the TestNG configuration, as the Gradle configuration has issues.
+For IntelliJ IDEA, run the main Java file "TestAndroidApps.java" with the TestNG configuration, as the Gradle configuration has issues.
 
 IntelliJ IDEA does not have issues for running both the TestNG; and Gradle configurations for testing the main Java file "TestDesktopWebsites.java".
 
 [2]
 
-Run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py')'s function which starts with "def test_...():", as running wih the Current File option has issues.
+For Webstorm, run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py')'s function which starts with "def test_...():", as running wih the Current File option has issues.
 
 [3]
 
-It is safe to directly run the the correct JavaScript file (testpartialwebsites.js; if not testapps.js) directly with the Current File option.
+For Webstorm, it is safe to directly run the the correct JavaScript file (testpartialwebsites.js; if not testapps.js) directly with the Current File option.
 
 )
 
