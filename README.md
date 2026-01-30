@@ -48,11 +48,11 @@ IntelliJ IDEA does not have issues for running both the TestNG; and Gradle confi
 
 [2]
 
-For Webstorm, run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py')'s function which starts with "def test_...():", as running wih the Current File option has issues.
+For Webstorm, run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py") 's function which starts with "def test_...():", as running wih the Current File option has issues.
 
 [3]
 
-For Webstorm, it is safe to directly run the the correct JavaScript file (testpartialwebsites.js; if not testapps.js) directly with the Current File option.
+For Webstorm, it is safe to directly run the the correct JavaScript file ("FirstGroupOfWebsites.js"; if not "testapps.js") directly with the Current File option.
 
 )
 
