@@ -48,7 +48,7 @@ IntelliJ IDEA does not have issues for running both the TestNG; and Gradle confi
 
 [2]
 
-For Webstorm, run the main Python file ("testparitialwebsites.py"; if not "testpartialapps.py") 's function which starts with "def test_...():", as running wih the Current File option has issues.
+For Webstorm, run the main Python file ("testpartialwebsites.py"; if not "testpartialapps.py") 's function which starts with "def test_...():", as running wih the Current File option has issues.
 
 [3]
 
