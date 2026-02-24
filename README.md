@@ -61,11 +61,15 @@ For Webstorm, it is safe to directly run the the correct JavaScript file ("First
 
 [1]
 
-Microsoft Bing search results would have an error once we navigate to the Search tab, as the manual check prevents automation, so please kindly comment out the related code.
+Microsoft Bing search results would have an error for both before; and after we navigate to the Search tab, as the manual check prevents automation, so please kindly comment out the related code, and use driver.get("https://www...."); to directly go to the required website.
 
 [2]
 
 Amino has shut down in December 2025, so its webpages cannot be viewed for both the related desktop web browser; and the Microsoft Edge Canary smartphone application code, so please kindly comment out the related code, including the code lines which import "SecondGroupOfWebsites.js", and "ThirdGroupOfWebsites.js"; and the code lines which call their functions (without doing so, running "FirstGroupOfWebsites.js" with the Current File option, would not be able to enter the email input field value "abc@gmail.com" for the website "https://demo.guru99.com/", in order to eventually fail after reaching the Microsoft Bing search results webpage).
+
+[3]
+
+Therefore, the code for all three programming languages would be changed to reach the Blogger webpage, for which the tagName "a" is used to find the 2026 arrow for hiding or expanding the notes' weblinks; and the text at the right of this arrow needs to be found by using the class name "post-count-link"; taking note that JavaScript is unable to find the non-first WebElements for a list of WebElements, and would have to find the single first topmost, and leftmost WebElement(s).
 
 =
 
