@@ -324,10 +324,10 @@ public class FirstGroupOfWebsites {
 
         if(displayedText2.isDisplayed()){
             System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
         }else{
             System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
         }
 
         for (int i=0; i<5; i++) {
@@ -337,10 +337,10 @@ public class FirstGroupOfWebsites {
 
         if(displayedText2.isDisplayed()){
             System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is reached.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
         }else{
             System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
         }
 
         // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
