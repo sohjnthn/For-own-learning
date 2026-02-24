@@ -22,7 +22,7 @@ def generate_html_report(screenshots):
   report.write("<h1>Test Report with Screenshots</h1>")
   for step, screenshot in screenshots.items():
    report.write(f"<h2>{step}</h2>")
-   report.write(f'<img src="{screenshot}" alt="{step}" style="width:600px;"><br>')
+   report.write(f'<img src="{screenshot}" alt="{step}" style="height:476px;width:238px;"><br>')
   report.write("</body></html>")
  print(f"Report generated: {report_path}")
 

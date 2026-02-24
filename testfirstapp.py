@@ -1,6 +1,3 @@
-from appium import webdriver
-from appium.options.android import UiAutomator2Options
-from jinja2.nodes import Test
 from selenium.webdriver.common.by import By
 
 from datetime import datetime

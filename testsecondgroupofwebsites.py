@@ -21,10 +21,10 @@ screenshots = {}
 
 def test_second_group_of_websites(driver):
 
- driver.get("https://aminoapps.com/c/maplestorysea/recent/")
+ driver.get("https://maplestoryseatips.blogspot.com/")
 
  datetimeTextString = current_datetime_string_generator()
  driver.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
- screenshots["The Latest webpage is reached; Pass"] = take_screenshot(driver, "The Latest webpage is reached; Pass.")
+ screenshots["The default Blogger webpage is reached; Pass"] = take_screenshot(driver, "The default Blogger webpage is reached; Pass.")
 
  return screenshots
