@@ -8,6 +8,10 @@ Thank you.
 
 =
 
+Last update for the three Microsoft Word files for Java; Python; and JavaScript: 25 February 2026 before 12:23 am Singapore Time (GMT+8).
+
+=
+
 The webpage for all files:
 https://github.com/sohjnthn/For-own-learning
 
