@@ -123,7 +123,6 @@ public class TestAndroidApps {
         desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.microsoft.emmx.canary_138.0.3336.0-333600000_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         driver3 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
-
         thirdAppObjects = new ThirdAppObjects(driver3, extentTest, extentSparkReporter, extentReport);
     }
 

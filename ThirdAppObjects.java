@@ -1,5 +1,6 @@
 package hellocucumber;
 
+import io.appium.java_client.remote.SupportsContextSwitching;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -14,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Objects;
+import java.util.Set;
 
 public class ThirdAppObjects {
 
@@ -26,9 +28,6 @@ public class ThirdAppObjects {
 
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Web View\"]")
     WebElement searchResultsWebpageView;
-
-    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Web View\"]")
-    WebElement aminoWebpageView;
 
     String capturedScreenshotImageFilepathString = "";
 
@@ -63,15 +62,15 @@ public class ThirdAppObjects {
             System.out.println("Fail");
         }
 
-        edgeBrowserDefaultWebpageSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
+        edgeBrowserDefaultWebpageSearchBar.sendKeys("MapleStorySEA (South-East Asia) tips [Facebook notes]");
 
         if(edgeBrowserDefaultWebpageSearchBar.isDisplayed()){
             capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Edge Browser default webpage search bar contains the entered search term \"MapleStorySEA Unfunded Amino\".");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Edge Browser default webpage search bar contains the entered search term.");
             System.out.println("Pass");
         } else {
             capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Edge Browser default webpage search bar does not contain the entered search term \"MapleStorySEA Unfunded Amino\".");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Edge Browser default webpage search bar does not contain the entered search term.");
             System.out.println("Fail");
         }
 
@@ -79,11 +78,11 @@ public class ThirdAppObjects {
 
         if(requiredSearchOption.isDisplayed()){
             capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Edge Browser default webpage search bar contains the entered search term \"MapleStorySEA Unfunded Amino\"");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Edge Browser default webpage search bar contains the entered search term.");
             System.out.println("Pass");
         } else {
             capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Edge Browser default webpage search bar does not contain the entered search term \"MapleStorySEA Unfunded Amino\"");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Edge Browser default webpage search bar does not contain the entered search term.");
             System.out.println("Fail");
         }
 
@@ -95,6 +94,7 @@ public class ThirdAppObjects {
         }
 
         searchResultsWebpageView = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Web View\"]"));
+
         // The following line cannot be used as the WebElement is not found
         // WebElement requiredSearchResultLink = driver.findElement(By.partialLinkText("Featured | [MapleStorySEA] Unfunded Tips"));
 
@@ -120,8 +120,46 @@ public class ThirdAppObjects {
         // unable to detect any more
         // driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Web View\"]"));
         // The loading for UI change is very slow, we try to capture three screenshot images
-        for(int i=0; i<99999; i++) {
-            System.out.println("A nearby search result would be clicked on.");
+        //for(int i=0; i<99999; i++) {
+            //System.out.println("A nearby search result would be clicked on.");
+        //}
+
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
+        }
+
+        //for(int i=0; i<99999; i++) {
+            //System.out.println("A nearby search result would be clicked on.");
+        //}
+
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
+        }
+
+        //for(int i=0; i<99999; i++) {
+            //System.out.println("A nearby search result would be clicked on.");
+        //}
+
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
         }
 
         if (Objects.equals(oneString, "1")) {
@@ -134,8 +172,14 @@ public class ThirdAppObjects {
             System.out.println("Fail");
         }
 
-        for(int i=0; i<99999; i++) {
-            System.out.println("A nearby search result would be clicked on.");
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
         }
 
         if (Objects.equals(oneString, "1")) {
@@ -148,8 +192,24 @@ public class ThirdAppObjects {
             System.out.println("Fail");
         }
 
-        for(int i=0; i<99999; i++) {
-            System.out.println("A nearby search result would be clicked on.");
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
+        }
+
+        if (Objects.equals(oneString, "1")) {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "A nearby search result would be clicked on.");
+            System.out.println("Pass");
+        } else {
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "A nearby search results webpage's search results would not be clicked on.");
+            System.out.println("Fail");
         }
 
         if (Objects.equals(oneString, "1")) {

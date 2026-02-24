@@ -127,7 +127,7 @@ public class FirstGroupOfWebsites {
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title cannot be retrieved; which should be \"Guru99 Bank Home Page\".");
         }
 
-        driver.get("https://www.bing.com");
+        driver.get("https://www.bing.com/");
         // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
 
@@ -143,369 +143,251 @@ public class FirstGroupOfWebsites {
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect" + "\"" + websiteTitle + "\"; which should be \"Search - Microsoft Bing\".");
         }
 
-        // Microsoft Bing search bar
         WebElement microsoftBingSearchBar = driver.findElement(By.name("q"));
         // String microsoftBingSearchBarText = microsoftBingSearchBar.getText();
         // Selenium does not allow text input field value to be retrieved with WebElement object.getText();
         // Search bar should initially have an empty String
         if (microsoftBingSearchBar.isDisplayed()) {
-            microsoftBingSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
+            microsoftBingSearchBar.sendKeys("MapleStorySEA (South-East Asia) tips [Facebook notes]");
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
             capturedScreenshotImageFilepathString = takeScreenshot(driver);
         }
 
         if (microsoftBingSearchBar.isDisplayed()) {
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search term input is the correct \"MapleStorySEA Unfunded Amino\".");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search term input is the correct \"MapleStorySEA (South-East Asia) tips [Facebook notes]\".");
             microsoftBingSearchBar.sendKeys(Keys.ENTER);
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
         } else {
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search term input is the incorrect \"MapleStorySEA Unfunded Amino\".");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search term input is the incorrect \"MapleStorySEA (South-East Asia) tips [Facebook notes]\".");
             microsoftBingSearchBar.sendKeys(Keys.ENTER);
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
         }
 
         websiteTitle = driver.getTitle();
 
         System.out.println("The website title is \"" + websiteTitle + "\".");
 
-        for (int i=0; i<99999; i++){
-            System.out.println("Wait for the initial \"MapleStorySEA Unfunded Amino - Search\" webpage to finish loading.");
-        }
-
         // Note: Not all web browser tab titles work
-        // Microsoft Bing - First Page of search results - Default All tab
-        if (Objects.equals(websiteTitle, "MapleStorySEA Unfunded Amino - Search")) {
-            System.out.println("The current web browser tab title is " + "\"" + websiteTitle + "\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search has been triggered, to reach the webpage with the web browser tab title \"MapleStorySEA Unfunded Amino - Search\".");
-        } else {
-            System.out.println("The current web browser tab title cannot be retrieved.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search has not been triggered, to reach the webpage with the web browser tab title \"MapleStorySEA Unfunded Amino - Search\".");
-        }
+        websiteTitle = driver.getTitle();
 
-        // MapleStory Unfunded Amino (Microsoft Bing search results - Search tab)
-        //websiteTitle = driver.getTitle();
-
-        // System.out.println("The website title is \"" + websiteTitle + "\".");
+        System.out.println("The website title is \"" + websiteTitle + "\".");
 
         // Search engine result Search tab
         // id is based on the line above highlighted text for inspected element
         // Still on the same initial Search Results webpage
         // Should only check for whether the WebElement searchTab is displayed
-        WebElement searchTab = driver.findElement(By.id("b-scopeListItem-copilotsearch"));
-        if (searchTab.isDisplayed()) {
-            searchTab.click();
+        //WebElement searchTab = driver.findElement(By.id("b-scopeListItem-copilotsearch"));
+        //if (searchTab.isDisplayed()) {
+            //searchTab.click();
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - Search tab has been reached.");
-        } else {
-            searchTab.click();
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - Search tab has been reached.");
+        //} else {
+            //searchTab.click();
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results - Search tab has not been reached.");
-        }
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results - Search tab has not been reached.");
+        //}
 
         // Go back to All tab from Search tab webpage
         // id is based on the line above highlighted text for inspected element
-        WebElement allTab = driver.findElement(By.id("b-scopeListItem-web"));
-        if (allTab.isDisplayed()) {
-            allTab.click();
+        //WebElement allTab = driver.findElement(By.id("b-scopeListItem-web"));
+        //if (allTab.isDisplayed()) {
+            //allTab.click();
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - All tab has been reached.");
-        } else {
-            allTab.click();
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //extentTest.addScreenCaptureFromPath(capturedScreensh  otImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - All tab has been reached.");
+        //} else {
+            //allTab.click();
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results - All tab has not been reached.");
-        }
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
+            //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results - All tab has not been reached.");
+        //}
 
         websiteTitle = driver.getTitle();
 
         System.out.println("The website title is \"" + websiteTitle + "\".");
 
         // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "MapleStorySEA Unfunded Amino - Search")) {
-            System.out.println("The current web browser tab title is " + "\"" + websiteTitle + "\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results webpage has been reached.");
-        } else {
-            System.out.println("The current web browser tab title cannot be retrieved.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results webpage has not been reached.");
-        }
+        //if (Objects.equals(websiteTitle, "MapleStorySEA (South-East Asia) tips [Facebook notes] - Search")){
+            //System.out.println("The current web browser tab title is " + "\"" + websiteTitle + "\".");
+            //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results webpage has been reached.");
+        //} else {
+            //System.out.println("The current web browser tab title cannot be retrieved.");
+            //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Microsoft Bing search results webpage has not been reached.");
+        //}
 
 
         // web browser search engine result uses partialLinkText is not working, due to YouTube videos being displayed at the right sometimes
-        //WebElement requiredSearchResultLink = driver.findElement(By.partialLinkText("Featured | [MapleStorySEA] Unfunded Tips Amino - Amino Apps"));
         // Due to video section appearing at the right
         // Which causes less text for the Microsoft Bing search results hyperlink to be displayed
-        WebElement requiredSearchResultLink = driver.findElement(By.partialLinkText("Featured | [MapleStorySEA] Unfunded Tips"));
+        //WebElement requiredSearchResultLink = driver.findElement(By.partialLinkText("MapleStorySEA (South-East Asia) tips [Facebook notes] - Search"));
         // Use tagName "a" instead
         // Cannot use tagName, keeps changing position in List <WebElement>
         //List <WebElement> tagNameAWebElementList = driver.findElements(By.tagName("a"));
         //WebElement requiredSearchResultLink = tagNameAWebElementList.get(30);
         // String requiredSearchResultPartialLinkTextString = requiredSearchResultPartialLinkText.getText();
         //String requiredSearchResultLinkText = requiredSearchResultLink.getText();
-        //if (requiredSearchResultPartialLinkText.isDisplayed() && requiredSearchResultPartialLinkTextString.equals("Featured | [MapleStorySEA] Unfunded Tips Amino - Amino Apps")) {
-        if (requiredSearchResultLink.isDisplayed()) {
-            for (int i = 0; i < 50; i++) {
+        //if (requiredSearchResultLink.isDisplayed()) {
+            //for (int i = 0; i < 50; i++) {
                 //requiredSearchResultPartialLinkText.sendKeys(Keys.DOWN);
-                requiredSearchResultLink.sendKeys(Keys.DOWN);
-            }
+                //requiredSearchResultLink.sendKeys(Keys.DOWN);
+            //}
             // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - bottom of the first page been reached; by using the WebElement for requiredSearchResultLink \"Featured | [MapleStorySEA] Unfunded Tips Amino - Amino Apps\".");
+            //capturedScreenshotImageFilepathString = takeScreenshot(driver);
 
 
-            for (int i = 0; i < 50; i++) {
+            //for (int i = 0; i < 50; i++) {
                 //requiredSearchResultPartialLinkText.sendKeys(Keys.UP);
-                requiredSearchResultLink.sendKeys(Keys.UP);
-            }
-            takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Microsoft Bing search results - top of the first page has been reached; by using the WebElement for requiredSearchResultLink \"Featured | [MapleStorySEA] Unfunded Tips Amino - Amino Apps\".");
+                //requiredSearchResultLink.sendKeys(Keys.UP);
+            //}
+            //takeScreenshot(driver);
 
             //requiredSearchResultPartialLinkText.click();
-            requiredSearchResultLink.click();
+            //requiredSearchResultLink.click();
             //}
-        }
+        //}
 
         // Problem: Search engine search result opens in a new web browser tab
         // New ChromeDriver object needs to be created to open a new web browser window
-        driver.get("https://aminoapps.com/c/maplestorysea/home/");
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino website has been reached.");
+
+        websiteTitle = driver.getTitle();
+
+        System.out.println("The website title is \"" + websiteTitle + "\".");
+
+        driver.get("https://maplestoryseatips.blogspot.com/");
+
+        String webBrowserTabTitle1 = driver.getTitle();
+
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        // For some reason, unable to get the correct web browser title text
+        WebElement displayedText = driver.findElement(By.partialLinkText("[MapleStorySEA] Permanent game content-related"));
+
+        if (displayedText.isDisplayed()){
+            System.out.println("https://maplestoryseatips.blogspot.com/ is reached");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "https://maplestoryseatips.blogspot.com/ is reached");
+        } else {
+            System.out.println("https://maplestoryseatips.blogspot.com/ is not reached.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "https://maplestoryseatips.blogspot.com/ is not reached");
+        }
+
+        List<WebElement> toggleList1 = driver.findElements(By.className("post-count-link"));
+        // tagName span means 0 to 107
+        // tagName a means 0 to 108
+
+        // Note that this is not the arrow to click on, this is only for the text which is at the right of the arrow
+        WebElement zippyToggleOpenForTheYear2026 = toggleList1.get(45);
+
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        for(int i=0; i<5; i++){
+            zippyToggleOpenForTheYear2026.sendKeys(Keys.DOWN);
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+        }
+
+        if (zippyToggleOpenForTheYear2026.isDisplayed()){
+            System.out.println("zippyToggleOpenForTheYear2026 is displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow).");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "zippyToggleOpenForTheYear2026 is displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow).");
+        } else {
+            System.out.println("zippyToggleOpenForTheYear2026 is not displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow).");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "zippyToggleOpenForTheYear2026 is not displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow).");
+        }
+
+        List<WebElement> tagAWebElementList = driver.findElements(By.tagName("a"));
+        // The actual arrow at the left of the text 2026
+        WebElement arrowForToggleOpenForTheYear2026 = tagAWebElementList.get(108);
+        // The position should still be 108 (actual 109th as this is from 0 to 108) after the arrow changes to point rightwards.
+        arrowForToggleOpenForTheYear2026.click();
+
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        if (arrowForToggleOpenForTheYear2026.isDisplayed()){
+            System.out.println("arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via the tagName a) should be closed (point rightwards).");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is closed (points rightwards).");
+        } else {
+            System.out.println("arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is not closed incorrectly (is still pointing downwards).");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is not closed (still pointing downwards).");
+        }
+
+        WebElement theText2026 = driver.findElement(By.partialLinkText("2026"));
+        theText2026.click();
+
+        // For some reason, unable to get the correct web browser title text
+        // The following refers to the partialLinkText title of the second note, which should be at the bottom of the webpage
+        WebElement displayedText2 = driver.findElement(By.partialLinkText("[MapleStorySEA] Create your own guild to boost all characters' damage ranges"));
+
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        if(displayedText2.isDisplayed()){
+            System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+        }else{
+            System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+        }
+
+        for (int i=0; i<5; i++) {
+            displayedText2.sendKeys(Keys.DOWN);
+            capturedScreenshotImageFilepathString = takeScreenshot(driver);
+        }
+
+        if(displayedText2.isDisplayed()){
+            System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is reached.");
+        }else{
+            System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
+            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
+        }
+
+        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+
+        websiteTitle = driver.getTitle();
+
+        System.out.println("The website title is \"" + websiteTitle + "\".");
+
+        websiteTitle = driver.getTitle();
+
+        System.out.println("The website title is \"" + websiteTitle + "\".");
+
+        websiteTitle = driver.getTitle();
+
+        System.out.println("The website title is \"" + websiteTitle + "\".");
+
+        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
+        capturedScreenshotImageFilepathString = takeScreenshot(driver);
 
         websiteTitle = driver.getTitle();
 
         System.out.println("The website title is \"" + websiteTitle + "\".");
 
         // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Featured | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
 
-        WebElement aminoSearchBar = driver.findElement(By.className("nav-search-input"));
-        //String aminoSearchBarText = aminoSearchBar.getText();
-
-        if (aminoSearchBar.isDisplayed()) {
-            aminoSearchBar.sendKeys("MapleStory Unfunded Amino");
-            // non-empty input has been entered
-            // Text input field value cannot be found by Selenium
-            //aminoSearchBarText = aminoSearchBar.getText();
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino search term has been provided as the correct \"MapleStorySEA Unfunded Amino\".");
-        } else {
-            aminoSearchBar.sendKeys("MapleStory Unfunded Amino");
-            // non-empty input has been entered
-            // aminoSearchBarText = aminoSearchBar.getText();
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino search term has been provided as not \"MapleStorySEA Unfunded Amino\".");
-        }
-
-        String aminoSearchTerm = "MapleStorySEA Unfunded Amino";
-        int aminoSearchTermLength = aminoSearchTerm.length();
-        for (int i = 0; i < aminoSearchTermLength; i++) {
-            aminoSearchBar.sendKeys(Keys.BACK_SPACE);
-        }
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
-
-        //aminoSearchBarText = aminoSearchBar.getText();
-        //if (aminoSearchBarText.equals("")) {
-        //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino search term has been removed by the Backspace key; and the current Amino search term is \"" + aminoSearchBarText + "\".");
-        //} else {
-        //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino search term has not been removed by the Backspace key; and the current Amino search term is \"" + aminoSearchBarText + "\".");
-        //}
-
-        aminoSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
-
-        //aminoSearchBarText = aminoSearchBar.getText();
-        //if(aminoSearchBarText.equals("MapleStorySEA Unfunded Amino")) {
-        //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino search term has been re-provided as the correct \"" + aminoSearchBarText + "\", which should be \"MapleStorySEA Unfunded Amino\".");
-        //} else {
-        //extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino search term has been re-provided as the incorrect \"" + aminoSearchBarText + "\", which should be \"MapleStorySEA Unfunded Amino\".");
-        //}
-
-        aminoSearchBar.sendKeys(Keys.ENTER);
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
+        // findElements is for more than one matching object with the same class/name/id/partialLinkText which cannot be uniquely identified
+        // Base this on the Inspect - Ctrl+F order or position, search with "" marks
+        // className for this case is "overflow-hidden"
+        //List<WebElement> sevenLabelClassnameWebElementList = driver.findElements(By.className("label"));
+        // Spell Trace and Star Force Enhancement
+        //WebElement requiredSecondLabelClassnameElement = sevenLabelClassnameWebElementList.get(1);
 
         //websiteTitle = driver.getTitle();
-        List<WebElement> tagNameH3WebElementList = driver.findElements(By.tagName("h3"));
-        WebElement popularPostsText = tagNameH3WebElementList.get(0);
-        String popularPostsTextString = popularPostsText.getText();
 
-        // This test step usually fails due to changing web browser tab title
-        // So changed to use fixed non-hyperlink text "Popular Posts", for the "Popular Posts" section
-        // For this case, the tag is h3
-        System.out.println("The Popular Posts' section's Popular Posts title for entering a search term from an Amino community is \"" + popularPostsTextString + "\".");
+        //System.out.println("The website title is \"" + websiteTitle + "\".");
 
         // Note: Not all web browser tab titles work
-        if (Objects.equals(popularPostsTextString, "Popular posts")) {
-            System.out.println("The Popular Posts' section's Popular Posts title for entering a search term from an Amino community is the correct " + "\"" + popularPostsTextString + "\"; which should be \"Popular Posts\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Popular Posts' section's Popular Posts title for entering a search term from an Amino community is the correct " + "\"" + popularPostsTextString + "\"; which should be \"Popular Posts\".");
-        } else {
-            System.out.println("The Popular Posts' section's Popular Posts title for entering a search term from an Amino community is the incorrect " + "\"" + popularPostsTextString + "\"; which should be \"Popular Posts\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Popular Posts' section's Popular Posts title for entering a search term from an Amino community is the correct " + "\"" + popularPostsTextString + "\"; which should be \"Popular Posts\".");
-        }
-
-        driver.get("https://aminoapps.com/c/maplestorysea/home/");
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Featured | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is " + "\"" + websiteTitle + "\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage is the correct \"" + websiteTitle + "\"; which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title cannot be retrieved.");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage is the incorrect \"" + websiteTitle + "\"which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".\");.");
-        }
-
-        WebElement privacyNoticeAcceptButton = driver.findElement(By.className("confirm-close"));
-        if (privacyNoticeAcceptButton.isDisplayed()) {
-            privacyNoticeAcceptButton.click();
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The privacy notice pop-up's Accept button has been clicked on, so the pop-up has been closed.");
-        } else {
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The privacy notice pop-up's Accept button has not been clicked on.");
-        }
-
-        // findElement is only for the first matching object for the case of multiple objects with the same name/id/className
-        WebElement freeCharacterSlotExpansionCoupon = driver.findElement(By.className("overflow-hidden"));
-        if (freeCharacterSlotExpansionCoupon.isDisplayed()) {
-            freeCharacterSlotExpansionCoupon.click();
-        }
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Reddit advice | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is " + "\"" + websiteTitle + "\".");
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage is the correct \"" + websiteTitle + "\"; which should be \"Reddit advice | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title cannot be retrieved.");
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage is the incorrect \"" + websiteTitle + "\"; which should be \"Reddit advice | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
-
-        driver.get("https://aminoapps.com/c/maplestorysea/home/");
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage has been reached.");
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Featured | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; which should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
-
-        // findElements is for more than one matching object with the same class/name/id/partialLinkText which cannot be uniquely identified
-        // Base this on the Inspect - Ctrl+F order or position, search with "" marks
-        // className for this case is "overflow-hidden"
-        List<WebElement> fourOverflowHiddenClassnameWebElementList = driver.findElements(By.className("overflow-hidden"));
-        // Spell Trace and Star Force Enhancement
-        WebElement requiredThirdOverflowHiddenClassnameElement = fourOverflowHiddenClassnameWebElementList.get(2);
-        if (requiredThirdOverflowHiddenClassnameElement.isDisplayed()) {
-            requiredThirdOverflowHiddenClassnameElement.click();
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage has been reached.");
-        } else {
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage has not been reached.");
-        }
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Unfunded Training Advice from Level 1 to Level 200? | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Unfunded Training Advice from Level 1 to Level 200? | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Unfunded Training Advice from Level 1 to Level 200? | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Unfunded Training Advice from Level 1 to Level 200? | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Unfunded Training Advice from Level 1 to Level 200? | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
-
-        driver.get("https://aminoapps.com/c/maplestorysea/home/");
-        // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-        capturedScreenshotImageFilepathString = takeScreenshot(driver);
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Featured | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
-
-        // findElements is for more than one matching object with the same class/name/id/partialLinkText which cannot be uniquely identified
-        // Base this on the Inspect - Ctrl+F order or position, search with "" marks
-        // className for this case is "overflow-hidden"
-        List<WebElement> sevenLabelClassnameWebElementList = driver.findElements(By.className("label"));
-        // Spell Trace and Star Force Enhancement
-        WebElement requiredSecondLabelClassnameElement = sevenLabelClassnameWebElementList.get(1);
-        if (requiredSecondLabelClassnameElement.isDisplayed()) {
-            requiredSecondLabelClassnameElement.click();
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage has been reached.");
-        } else {
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage has not been reached.");
-        }
-
-        websiteTitle = driver.getTitle();
-
-        System.out.println("The website title is \"" + websiteTitle + "\".");
-
-        // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Latest | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Latest | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The current web browser tab title is the correct " + "\"" + websiteTitle + "\"; and should be \"Latest | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Latest | [MapleStorySEA] Unfunded Tips Amino\".");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The current web browser tab title is the incorrect " + "\"" + websiteTitle + "\"; and should be \"Latest | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
-
     }
 
     public static String takeScreenshot(WebDriver driver) throws IOException {

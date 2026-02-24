@@ -22,61 +22,35 @@ public class ThirdGroupOfWebsites {
 
     public ThirdGroupOfWebsites (ChromeDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
         // Therefore, the Cucumber Feature version requires driver4 to be initialised for the Then method
-        driver.get("https://aminoapps.com/c/maplestorysea/recent/");
+        driver.get("https://maplestoryseatips.blogspot.com/");
 
         String oneString = "1";
 
         // i is a valid tagName, which is displayed starting with "<i "
-        List<WebElement> tagNameIWebElementList = driver.findElements(By.tagName("i"));
-        WebElement aminoHomeIcon = tagNameIWebElementList.get(2);
-        if (aminoHomeIcon.isDisplayed()) {
-            aminoHomeIcon.click();
-        }
+        //List<WebElement> tagNameIWebElementList = driver.findElements(By.tagName("i"));
 
         websiteTitle = driver.getTitle();
 
         System.out.println("The website title is \"" + websiteTitle + "\".");
 
         // Note: Not all web browser tab titles work
-        if (Objects.equals(websiteTitle, "Featured | [MapleStorySEA] Unfunded Tips Amino")) {
-            System.out.println("The current web browser tab title is the correct \"" + websiteTitle + "\"; and should be the correct \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        } else {
-            System.out.println("The current web browser tab title is the incorrect \"" + websiteTitle + "\"; and should be the correct \"Featured | [MapleStorySEA] Unfunded Tips Amino\".");
-        }
 
         // button is a valid tagName, which is displayed starting with "<button "
         // testing for the Create Post button - pop-up
-        List<WebElement> tagNameButtonWebElementList = driver.findElements(By.tagName("button"));
-        WebElement createPostButton = tagNameButtonWebElementList.get(1);
-        if(createPostButton.isDisplayed()) {
-            createPostButton.click();
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            //actual pop-up cannot be captured, can only prove that the pop-up was triggered by clicking on the Create Post button
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage's Create Post pop-up is displayed.");
-            System.out.println("Create Post button was clicked on to trigger the pop-up. The pop-up is not displayed at this point in time, but is displayed later.");
-        } else {
-            // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
-            capturedScreenshotImageFilepathString = takeScreenshot(driver);
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage's Create Post button was not clicked on, so the Create Post pop-up is not displayed later.");
-        }
+        //List<WebElement> tagNameButtonWebElementList = driver.findElements(By.tagName("button"));
+        //WebElement createPostButton = tagNameButtonWebElementList.get(1);
 
         // trying to capture pop-up UI in ExtentReport
         // So not possible to provide not working if else - else
         // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage's Create Post pop-up is displayed now.");
+        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The default Blogger webpage is displayed now (this is intended to display the default Blogger webpage).");
 
         // Test for whether non-text-input field text can be retrieved
-        WebElement tagLine = driver.findElement(By.className("tagline"));
-        String taglineText = tagLine.getText();
+        //WebElement tagLine = driver.findElement(By.className("tagline"));
+        //String taglineText = tagLine.getText();
         // Captured screenshot image filename to be used for ExtentReport test step - Pass; or Fail
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        if(taglineText.equals("MapleStorySEA follows the original Korea MapleStory (by Nexon Korea) 's content.")){
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The Amino webpage's tagline text is displayed as the correct \"" + taglineText + "\"; which should be \"MapleStorySEA follows the original Korea MapleStory (by Nexon Korea) 's content.\".");
-        } else {
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The Amino webpage's tagline text is displayed as the incorrect \"" + taglineText + "\"; which should be \"MapleStorySEA follows the original Korea MapleStory (by Nexon Korea) 's content.\".");
-        }
 
         // Testing if "Explore your interests and " for the pop-up can be accessed
         // tagName is "p"
@@ -87,14 +61,7 @@ public class ThirdGroupOfWebsites {
         // This has been verified by the system to not match
         // So this has to be tested by checking for whether the WebElement object is displayed
         // Explore your interests and find your communities.
-        List<WebElement> imgTagList = driver.findElements(By.tagName("img"));
-        WebElement topLeftCornerAminoLogoButton = imgTagList.get(0);
-
-        // There is some delay, so we need to use the WebElement which can be found
-        // before and after the pop-up is displayed
-        for(int i=0; i<1000; i++) {
-            System.out.println("The Amino webpage's tagline text is displayed as the correct \"Explore your interests and find your communities.\"; which should be \"Explore your interests and find your communities.\", the pop-up UI would take time to load.");
-        }
+        //List<WebElement> imgTagList = driver.findElements(By.tagName("img"));
 
         // The following element cannot be found with a for loop for 1000 times for a single System.out.println statement
         // Then the required text of the pop-up can be found
@@ -103,11 +70,6 @@ public class ThirdGroupOfWebsites {
         //String exploreYourInterestsAndFindYourCommunitiesFullstopTextString = exploreYourInterestsAndFindYourCommunitiesFullstopText.getText();
 
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        if(topLeftCornerAminoLogoButton.isDisplayed()){
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The pop-up's text is correct; and should be \"Explore your interests and find your communities.\".");
-        } else {
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The pop-up's text is incorrect; and should be \"Explore your interests and find your communities.\".");
-        }
 
         extentReport.flush();
         // Note: Unable to verify any element of pop-up

@@ -21,11 +21,11 @@ public class SecondGroupOfWebsites {
     private String capturedScreenshotImageFilepathString = "";
 
     public SecondGroupOfWebsites (ChromeDriver driver, ExtentTest extentTest, ExtentSparkReporter extentSparkReporter, ExtentReports extentReport) throws IOException {
-
+        
         // For displaying a sentence for ExportReport
-        driver.get("https://aminoapps.com/c/maplestorysea/recent/");
+        driver.get("https://maplestoryseatips.blogspot.com/");
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "When it is not possible to retrieve WebElements using name/id/className/partialLinkText.");
+        extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "When it is not possible to retrieve WebElements using name/id/className/partialLinkText (this is intended to display the default Blogger webpage).");
         System.out.println("It is not possible to do so for certain WebElements in this way.");
 
     }
