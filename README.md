@@ -109,7 +109,7 @@ Thank you."
 
 Updated job search list:
 
-I am looking for a part-time; internship; contract; or permanent job, with no required past work experience, for at least a duration of 3 months, for a monthly salary of $2,000 in Singapore.
+I am looking for a part-time; internship; contract; or permanent job, with no required past work experience, for at least a duration of 3 months, for a monthly salary of $1,800 in Singapore.
 
 [1]
 
