@@ -114,91 +114,157 @@ I am looking for a part-time; internship; contract; or permanent job, with no re
 [1]
 
 (Including fresh/entry level)
+
 Test/
+
 Testing/
+
 Tester/
+
 Software Test/
+
 Manual Test/
+
 Manual/
+
 Associate Test/
+
 UAT (User Acceptance Testing)/
+
 QA/
+
 Quality Analyst/
+
 Quality Assurance
 
 [2]
 
 (Up to 6 non-shift working days for each week)
+
 Packer/
+
 Data entry/
+
 Library
 
 [3]
 
-(Non-retail/sales/marketing/roadshow/target/
-KPI/commission/challenge/accounting/
-food and beverage/night-shift)
+(Non-retail/sales/marketing/ roadshow/target/KPI/commission/challenge/accounting/food and beverage/night-shift)
+
 Admin/
+
 Administrator/
+
 Administrative/
+
 Admin Assistant/
+
 Admin Executive
 
 [4]
 
 (Non-retail/sales/marketing/night-shift)
+
 Medical/
+
 Healthcare/
+
 Healthcare customer service/
+
 Healthcare porter/
+
 Healthcare reception/
+
 Hospital/
+
 Polyclinic/
+
 Usher/
+
 Billing Gov Healthcare/
+
 PSA/
+
 Patient service assistant/
+
 Patient service associate/
+
 Ward food/
+
 Clinic/
+
 Clinic attendant/
+
 Clinic assistant/
+
 Dental assistant/
+
 Dental/
+
 Pharmacy assistant
 
 [5]
 
 (Non-retail/sales/charity ambassador)
+
 Grit/
+
 Min A (Minimum A Levels)/
+
 Min Diploma (Minimum Diploma)/
+
 Intern/
+
 Quick Hiring/
+
 No Interview/
+
 No Experience/
+
 No Exp/
+
 IT Support Training Provided/
+
 IT Helpdesk Training Provided/
+
 Training Provided/
+
 Entry Level/
+
 Solutions/
+
 Career/
+
 Talent/
+
 Hire/
+
 Job/
+
 Gov/
+
 Govt/
+
 Government/
+
 Month contract/
+
 Year contract/
+
 Urgent/
+
 Immediate/
+
 Office Hours/
+
 Part Time/
+
 Temp/
+
 Temporary/
+
 Perm/
+
 Permanent
 
 Thank you.
