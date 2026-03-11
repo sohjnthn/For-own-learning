@@ -141,6 +141,14 @@ Quality Assurance
 
 (Up to 6 non-shift working days for each week)
 
+Landscape Worker/
+
+Digital Ambassador/
+
+Part Time Student Care Officer/
+
+Temp Admin Kovan/
+
 Packer/
 
 Data entry/
