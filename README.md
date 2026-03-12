@@ -141,6 +141,8 @@ Quality Assurance
 
 (Up to 6 non-shift working days for each week)
 
+Temp Bank Associate East/
+
 Month Bank Admin/
 
 IT Admin/
