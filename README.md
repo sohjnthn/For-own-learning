@@ -141,6 +141,10 @@ Quality Assurance
 
 (Up to 6 non-shift working days for each week)
 
+Production Technician Kallang/
+
+Redemption Crew/
+
 Temp Bank Associate East/
 
 Month Bank Admin/
