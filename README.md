@@ -141,6 +141,8 @@ Quality Assurance
 
 (Up to 6 non-shift working days for each week)
 
+Onsite Health Screening Executive/
+
 Production Technician Kallang/
 
 Redemption Crew/
