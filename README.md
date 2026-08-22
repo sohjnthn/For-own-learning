@@ -873,3 +873,5 @@ Minor changes to the FirstGroupOfWebsites.java (and the equivalent testfirstgrou
 1) The toggle arrow at the left of the partialLinkText "2026" is no longer at position 108, but is now at 128.
 
 2) The same toggle arrow cannot be detected to be displayed; or not displayed, so the related code part has been removed.
+
+3) The targeted Blogger post is no longer the bottommost post for 2026, but is still the bottommost post for January 2026.
