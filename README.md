@@ -863,3 +863,13 @@ def test_if_websites_can_be_split():
 =
 
 Conclusion: It is better to use IntelliJ IDEA - Java project - build.gradle (Gradle DSL as Groovy) - opensdk-23; or Android Studio -"No Activity" project, with the language "Java", and the build configuration language "Groovy DSL (build.gradle)". Some configurations which cannot run (Eclipse IDE for Java, cannot run Cucumber feature files, and cannot allow URL for testing smartphone applications); or being unable to run driver.get("...) code lines (IntelliJ IDEA - Java - Maven project). There is some issue for which Eclipse - testng.xml's running does not work once the first method for testing the smartphone applications runs.
+
+=
+
+23 August 2026 update:
+
+Minor changes to the FirstGroupOfWebsites.java (and the equivalent testfirstgroupofwebsites.py; and FirstGroupofWebsites.js) -
+
+1) The toggle arrow at the left of the partialLinkText "2026" is no longer at position 108, but is now at 128.
+
+2) The same toggle arrow cannot be detected to be displayed; or not displayed, so the related code part has been removed.
