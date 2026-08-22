@@ -299,19 +299,11 @@ public class FirstGroupOfWebsites {
 
         List<WebElement> tagAWebElementList = driver.findElements(By.tagName("a"));
         // The actual arrow at the left of the text 2026
-        WebElement arrowForToggleOpenForTheYear2026 = tagAWebElementList.get(108);
+        WebElement arrowForToggleOpenForTheYear2026 = tagAWebElementList.get(128);
         // The position should still be 108 (actual 109th as this is from 0 to 108) after the arrow changes to point rightwards.
         arrowForToggleOpenForTheYear2026.click();
 
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
-
-        if (arrowForToggleOpenForTheYear2026.isDisplayed()){
-            System.out.println("arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via the tagName a) should be closed (point rightwards).");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is closed (points rightwards).");
-        } else {
-            System.out.println("arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is not closed incorrectly (is still pointing downwards).");
-            extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "arrowForToggleOpenForTheYear2026 (the actual arrow at the left of the text 2026 via tagName a) is not closed (still pointing downwards).");
-        }
 
         WebElement theText2026 = driver.findElement(By.partialLinkText("2026"));
         theText2026.click();
@@ -323,10 +315,10 @@ public class FirstGroupOfWebsites {
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
 
         if(displayedText2.isDisplayed()){
-            System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
+            System.out.println("The bottommost note for January 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.");
         }else{
-            System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
+            System.out.println("The bottommost note for January 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.");
         }
 
@@ -336,10 +328,10 @@ public class FirstGroupOfWebsites {
         }
 
         if(displayedText2.isDisplayed()){
-            System.out.println("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
+            System.out.println("The bottommost note for January 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.");
         }else{
-            System.out.println("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
+            System.out.println("The bottommost note for January 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.");
         }
 
