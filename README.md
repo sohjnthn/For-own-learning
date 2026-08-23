@@ -877,3 +877,5 @@ Minor changes to the FirstGroupOfWebsites.java (and the equivalent testfirstgrou
 3) The targeted Blogger post is no longer the bottommost post for 2026, but is still the bottommost post for January 2026.
 
 4) By default, the last year's last posted Blogger post is displayed for the default Blogger webpage, so this has been changed accordingly.
+
+5) Have checked with Google - Gemini that despite the requirement to use Eclise Adoptium JDK 17 for testing n8n with Docker Desktop, such that JAVA_HOME for Edit Environment Variables has to be changed accordingly, Selenium testing would not be affected.
