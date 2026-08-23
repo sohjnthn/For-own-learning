@@ -328,10 +328,10 @@ public class FirstGroupOfWebsites {
         }
 
         if(displayedText2.isDisplayed()){
-            System.out.println("The bottommost note for January 2026 is displayed; and is reached.");
+            System.out.println("The bottommost note for 2026 is displayed; and is reached.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.PASS, "The bottommost note for January 2026 is displayed; and is reached.");
         }else{
-            System.out.println("The bottommost note for January 2026 is not displayed.e; and is not reached.");
+            System.out.println("The bottommost note for 2026 is not displayed; and is not reached.");
             extentTest.addScreenCaptureFromPath(capturedScreenshotImageFilepathString).pass(MediaEntityBuilder.createScreenCaptureFromPath(capturedScreenshotImageFilepathString).build()).log(Status.FAIL, "The bottommost note for January 2026 is not displayed; and is not reached.");
         }
 
