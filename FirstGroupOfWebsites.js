@@ -5,8 +5,6 @@ const {write} = require("selenium-webdriver/io");
 const test = require("node:test");
 const fs = require('fs');
 // const WebDriverIO = require("WebDriverIO");
-const SecondGroupOfWebsites = require ('./SecondGroupOfWebsites.js');
-const ThirdGroupOfWebsites = require ('./ThirdGroupOfWebsites.js');
 
 let startIndex = 0
 let endIndex = 5
@@ -122,7 +120,7 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    microsoftBingSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
+    microsoftBingSearchBar.sendKeys("MapleStorySEA (South-East Asia) tips [Facebook notes]");
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -133,7 +131,7 @@ let base64Code
     microsoftBingSearchBar.sendKeys(Key.ENTER);
 
     for (let i=0; i<99999; i++){
-        console.log("Wait for the initial \"MapleStorySEA Unfunded Amino - Search\" webpage to finish loading.");
+        console.log("Wait for the initial \"MapleStorySEA (South-East Asia) tips [Facebook notes]h\" webpage to finish loading.");
     }
 
     screenshotFilenameArray.push(await takeTheScreenshot());
@@ -143,6 +141,8 @@ let base64Code
     stepNameString = 'Step ' + i;
 
     let title4 = driver.getTitle();
+
+    driver.get("https://maplestoryseatips.blogspot.com/");
 
     //let searchTab = driver.findElement(By.id("b-scopeListItem-copilotsearch"));
 
@@ -164,8 +164,6 @@ let base64Code
     //let allTab = driver.findElement(By.id("b-scopeListItem-web"));
     // allTab.click();
 
-    //driver.get("https://www.bing.com/search?pglt=299&q=MapleStorySEA+Unfunded+Amino+-+Search");
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
@@ -174,13 +172,7 @@ let base64Code
 
     let title5 = driver.getTitle();
 
-    screenshotFilenameArray.push(await takeTheScreenshot());
-    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
-    testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
-    i = i + 1;
-    stepNameString = 'Step ' + i;
-
-    let requiredSearchResultLink = driver.findElement(By.partialLinkText("Featured | [MapleStorySEA] Unfunded Tips"));
+    let displayedText = await driver.findElement(By.partialLinkText("[MapleStorySEA] Typed some extra things here"));
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -188,47 +180,60 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    for (let i = 0; i < 50; i++) {
+    // Something is wrong, the rest needs to be commented out
+
+    //let requiredSearchResultLink = driver.findElement(By.partialLinkText("Featured | [MapleStorySEA] Unfunded Tips"));
+
+    //screenshotFilenameArray.push(await takeTheScreenshot());
+    //console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
+    //testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
+    //i = i + 1;
+    //stepNameString = 'Step ' + i;
+
+    //for (let i = 0; i < 50; i++) {
+        //requiredSearchResultLink.sendKeys(Key.DOWN);
+    //}
+
+    //screenshotFilenameArray.push(await takeTheScreenshot());
+    //console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
+    //testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
+    //i = i + 1;
+    //stepNameString = 'Step ' + i;
+
+    //for (let i = 0; i < 50; i++) {
         //requiredSearchResultPartialLinkText.sendKeys(Keys.DOWN);
-        requiredSearchResultLink.sendKeys(Key.DOWN);
+        //requiredSearchResultLink.sendKeys(Key.UP);
+    //}
+
+    let firstPostCountLinkWebElement = await driver.findElement(By.className("post-count-link"));
+
+    for(let i=0; i<8; i++) {
+        firstPostCountLinkWebElement.sendKeys(Key.ARROW_DOWN);
+        screenshotFilenameArray.push(await takeTheScreenshot());
+        console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     }
 
-    screenshotFilenameArray.push(await takeTheScreenshot());
-    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    for (let i = 0; i < 50; i++) {
-        //requiredSearchResultPartialLinkText.sendKeys(Keys.DOWN);
-        requiredSearchResultLink.sendKeys(Key.UP);
-    }
+    // JavaScript was unable to find the first WebElement with the tagName "a"
+    // let firstTagAWebElement = await driver.findElement(By.tagName("a"));
 
-    screenshotFilenameArray.push(await takeTheScreenshot());
-    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
+    //for(let i=0; i<8; i++) {
+        //firstTagAWebElement.sendKeys(Key.ARROW_DOWN);
+        //screenshotFilenameArray.push(await takeTheScreenshot());
+        //console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
+    //}
+
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    requiredSearchResultLink.click();
-
-    screenshotFilenameArray.push(await takeTheScreenshot());
-    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
-    testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
-    i = i + 1;
-    stepNameString = 'Step ' + i;
-
-    driver.get("https://aminoapps.com/c/maplestorysea/home/");
 
     let title6 = driver.getTitle();
 
-    screenshotFilenameArray.push(await takeTheScreenshot());
-    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
-    testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
-    i = i + 1;
-    stepNameString = 'Step ' + i;
-
-    let aminoSearchBar = driver.findElement(By.className("nav-search-input"));
+    let theText2026 = await driver.findElement(By.partialLinkText("2026"));
+    theText2026.click()
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -236,7 +241,7 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    aminoSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
+    let displayedText2 = driver.findElement(By.partialLinkText("[MapleStorySEA] Create your own guild to boost all characters' damage ranges"));
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -244,19 +249,23 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let aminoSearchTerm = "MapleStorySEA Unfunded Amino";
-    let aminoSearchTermLength = aminoSearchTerm.length;
-    for (let i = 0; i < aminoSearchTermLength; i++) {
-        aminoSearchBar.sendKeys(Key.BACK_SPACE);
+    for (let i=0; i<5; i++) {
+        displayedText2.sendKeys(Key.ARROW_DOWN);
+        screenshotFilenameArray.push(await takeTheScreenshot());
+        console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     }
 
+    testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
+    i = i + 1;
+    stepNameString = 'Step ' + i;
+
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    aminoSearchBar.sendKeys("MapleStorySEA Unfunded Amino");
+    driver.get("https://maplestoryseatips.blogspot.com/");
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -264,27 +273,26 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let threeWebElementsList = driver.findElements(By.tagName("svg"));
-    let aminoSearchBarMagnifyingGlassButton = threeWebElementsList[0]
+    driver.get("https://maplestoryseatips.blogspot.com/");
+
+    screenshotFilenameArray.push(await takeTheScreenshot());
+    console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
+    testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
+    i = i + 1;
+    stepNameString = 'Step ' + i;
+
     // Have tried, even
-    // let aminoSearchBarMagnifyingGlassButton = driver.findElement(By.tagName("svg"));
     // would cause an error if
-    // aminoSearchBarMagnifyingGlassButton.click()
     // is used, despite this being the first element of the list
-    aminoSearchBar.sendKeys(Key.ENTER);
 
-    let popularPostsText = driver.findElement(By.tagName("h3"));
     // popularPostsText is the first of the two elements for this array, if using
     // let tagNameH3WebElementArray = driver.findElements(By.tagName("h3"));
 
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    driver.get("https://aminoapps.com/c/maplestorysea/home/");
 
     let title7 = driver.getTitle();
 
@@ -294,15 +302,11 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let privacyNoticeAcceptButton = driver.findElement(By.className("confirm-close"));
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    privacyNoticeAcceptButton.click();
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -315,7 +319,6 @@ let base64Code
     // (This file is for Javascript for Webstorm)
     // which uses the same className
     // Which would be for the "Unfunded Training Advice from Level 1 to Level 200?" note's button
-    let freeCharacterSlotExpansionCoupon = driver.findElement(By.className("overflow-hidden"));
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -324,7 +327,6 @@ let base64Code
     stepNameString = 'Step ' + i;
 
     // For which the featured Reddit Advice note's button is clicked on to reach the Reddit Advice note
-    freeCharacterSlotExpansionCoupon.click();
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -332,16 +334,11 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let title8 = driver.getTitle();
-
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    driver.get("https://aminoapps.com/c/maplestorysea/home/");
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -351,20 +348,16 @@ let base64Code
 
     let title9 = driver.getTitle();
 
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let fourOverflowHiddenClassnameWebElementArray = driver.findElements(By.className("overflow-hidden"));
     // The third of four elements is for the "Unfunded Training Advice from Level 1 to Level 200?" link
 
     // We need to use By.xpath to identify that the contained text is the following
     // (Only Java, and Python can identify the correct WebElement based on the index position which starts from 0 (for the firstWebElement of the WebElement List)
-    let thirdOverflowHiddenClassnameWebElement = await driver.findElement(By.xpath("//*[contains(text(), 'Unfunded Training Advice from Level 1 to Level 200?')]"));
-    thirdOverflowHiddenClassnameWebElement.click();
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -378,8 +371,6 @@ let base64Code
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    driver.get("https://aminoapps.com/c/maplestorysea/home/");
 
     let title11 = driver.getTitle();
 
@@ -389,7 +380,6 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    let sevenLabelClassnameWebElementArray = driver.findElements(By.className("label"));
     // The second of seven elements for this array is for the Latest tab
 
     screenshotFilenameArray.push(await takeTheScreenshot());
@@ -401,7 +391,6 @@ let base64Code
     let title12 = driver.getTitle();
     // It is not possible to reach the correct webpage without causing an error for Javascript
     // So the website address needs to be manually provided
-    driver.get("https://aminoapps.com/c/maplestorysea/recent/");
 
     let title13 = await driver.getTitle();
 
@@ -413,7 +402,6 @@ let base64Code
 
     // It is not possible to reach the correct webpage without causing an error for Javascript
     // So the website address needs to be manually provided
-    driver.get("https://aminoapps.com/c/maplestorysea/home/");
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -423,8 +411,6 @@ let base64Code
 
     // We need to use By.xpath to identify that the contained text is the following
     // (Only Java, and Python can identify the correct WebElement based on the index position which starts from 0 (for the firstWebElement of the WebElement List)
-    let latestTab = await driver.findElement(By.xpath("//*[contains(text(), 'Latest')]"));
-    latestTab.click();
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -432,17 +418,11 @@ let base64Code
     i = i + 1;
     stepNameString = 'Step ' + i;
 
-    // Unable to identify Amino Home icon
-
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
     testResults.push({step: stepNameString, screenshot: screenshotFilenameArray[i-1], status: 'PASS'});
     i = i + 1;
     stepNameString = 'Step ' + i;
-
-    // Unable to identify Create Post button as
-    // > Create Post <
-    // has whitespace character(s) directly after ">"; and/or directly before "<"
 
     screenshotFilenameArray.push(await takeTheScreenshot());
     console.log("length of screenshotFilenameArray is: " + screenshotFilenameArray.length);
@@ -455,21 +435,10 @@ let base64Code
         htmlContent += `<div>
         <p>Step: ${result.step}</p>
         <p>Status: ${result.status}</p>
-        <img src="${result.screenshot}" alt="Screenshot" width="300">
+        <img src="${result.screenshot}" alt="Screenshot" height="410" width="820">
     </div>`;
     });
     htmlContent += '</body></html>';
     fs.writeFileSync('./' + currentDateTime() + '_test-report.html', htmlContent);
     console.log('Report generated: test-report.html');
-
-    // Does nothing (the fourth html report is not generated)
-    // return testResults;
-
-    // For reaching the Latest tab https://aminoapps.com/c/maplestorysea/recent/ with driver2 as the driver name
-    const SecondGroupOfWebsites = new SecondGroupOfWebsites();
-
-    // This is only for reaching the Home tab https://aminoapps.com/c/maplestorysea/home/ with driver3 as the driver name,
-    // then going to the Latest tab by locating the text "Latest" (there should be no whitespace characters after > and before < for Inspect)
-    const ThirdGroupOfWebsites = new ThirdGroupOfWebsites();
-
 }())
