@@ -265,7 +265,7 @@ public class FirstGroupOfWebsites {
         capturedScreenshotImageFilepathString = takeScreenshot(driver);
 
         // For some reason, unable to get the correct web browser title text
-        WebElement displayedText = driver.findElement(By.partialLinkText("[MapleStorySEA] Permanent game content-related"));
+        WebElement displayedText = driver.findElement(By.partialLinkText("[MapleStorySEA] Typed some extra things here"));
 
         if (displayedText.isDisplayed()){
             System.out.println("https://maplestoryseatips.blogspot.com/ is reached");
