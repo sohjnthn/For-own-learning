@@ -146,7 +146,7 @@ def test_first_group_of_websites(driver):
     else:
         screenshots["The Search Results webpage is not reached; Fail."] = take_screenshot(driver, "The Search Results webpage is not reached; Fail.")
 
-    displayedText = driver.find_element(By.PARTIAL_LINK_TEXT, "[MapleStorySEA] Permanent game content-related")
+    displayedText = driver.find_element(By.PARTIAL_LINK_TEXT, "[MapleStorySEA] Typed some extra things here")
 
     if displayedText.is_displayed():
         print("https://maplestoryseatips.blogspot.com/ is reached")
@@ -171,7 +171,7 @@ def test_first_group_of_websites(driver):
         screenshots["zippyToggleOpenForTheYear2026 is not displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow); Fail."] = take_screenshot(driver, "zippyToggleOpenForTheYear2026 is not displayed (the className post-count-link of the text 2026 is used for finding the text at the right of the arrow); Fail.")
 
     tagAWebElementList = driver.find_elements(By.TAG_NAME, "a")
-    arrowForToggleOpenForTheYear2026 = tagAWebElementList[108]
+    arrowForToggleOpenForTheYear2026 = tagAWebElementList[128]
     arrowForToggleOpenForTheYear2026.click()
 
     datetimeTextString = current_datetime_string_generator()
@@ -193,11 +193,11 @@ def test_first_group_of_websites(driver):
     driver.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
 
     if displayedText2.is_displayed():
-        print("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage.")
-        screenshots["The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; Pass."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; Pass.")
+        print("The bottommost note for January 2026 is displayed.")
+        screenshots["The bottommost note for January 2026 is displayed; Pass."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; Pass.")
     else:
-        print("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage.")
-        screenshots["The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; Fail."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; Fail.")
+        print("The bottommost note for January 2026 is not displayed.")
+        screenshots["The bottommost note for January 2026 is not displayed; Fail."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; Fail.")
 
     for i in range (5):
         displayedText2.send_keys(Keys.DOWN)
@@ -205,11 +205,11 @@ def test_first_group_of_websites(driver):
         driver.save_screenshot("C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\Python_Screenshot_Images\\" + datetimeTextString + "_" + "screenshot.png")
 
     if displayedText2.is_displayed:
-        print("The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached.")
-        screenshots["The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached; Pass."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached; Pass.")
+        print("The bottommost note for 2026 is displayed; and is reached.")
+        screenshots["The bottommost note for 2026 is displayed; and is reached; Pass."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is displayed at the bottom of the current webpage; and is reached; Pass.")
     else:
-        print("The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached.")
-        screenshots["The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached; Fail."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached; Fail.")
+        print("The bottommost note for 2026 is not displayed; and is not reached.")
+        screenshots["The bottommost note for 2026 is not displayed; and is not reached; Fail."] = take_screenshot(driver, "The bottommost note for 2026 (the first note for January 2026) is not displayed at the bottom of the current webpage; and is not reached; Fail.")
 
 
     datetimeTextString = current_datetime_string_generator()
