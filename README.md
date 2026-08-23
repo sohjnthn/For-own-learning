@@ -879,3 +879,6 @@ Minor changes to the FirstGroupOfWebsites.java (and the equivalent testfirstgrou
 4) By default, the last year's last posted Blogger post is displayed for the default Blogger webpage, so this has been changed accordingly.
 
 5) Have checked with Google - Gemini that despite the requirement to use Eclise Adoptium JDK 17 for testing n8n with Docker Desktop, such that JAVA_HOME for Edit Environment Variables has to be changed accordingly, Selenium testing would not be affected.
+
+The three html reports were generated locally:
+https://github.com/sohjnthn/For-own-learning/commit/494456b9a4b80cb30d52e2fa994dca94f07d5cf3
