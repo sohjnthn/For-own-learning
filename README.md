@@ -21,7 +21,7 @@ https://github.com/sohjnthn/For-own-learning/blob/main/README.md
 Reference screenshot images for showing how to find the Microsoft Bing https://www.bing.com search bar for the desktop web browser Google Chrome:
 https://github.com/sohjnthn/For-own-learning/commit/1d54c1c4a7a0cd577650d4f52d56c5c3023a3b9b
 
-Reference screenshot images for showing how to use the Appium Inspector weblink https://inspector.appiumpro.com/ , in order to locate the xpath identifier for "API Demos" Android smartphone application, for the App/Search/Invoke Search screen - Prefill query text field, as an example:
+Reference screenshot images for showing how to use the Appium Inspector weblink https://inspector.appiumpro.com/ (Update on 26 August 2026: This website now directs to another website, please kindly use https://github.com/appium/appium-inspector/releases instead to download Appium Inspector), in order to locate the xpath identifier for "API Demos" Android smartphone application, for the App/Search/Invoke Search screen - Prefill query text field, as an example:
 https://github.com/sohjnthn/For-own-learning/commit/4bfb7ea5c605483e4edc2ad99070332412b80469
 
 Resume:
