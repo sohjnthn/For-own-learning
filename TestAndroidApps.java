@@ -86,7 +86,7 @@ public class TestAndroidApps {
 
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+        desiredCapabilities.setCapability("appium:platformVersion", "16.0");
         desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.afwsamples.testdpc_9.0.12-9012_minAPI21(nodpi)_apkmirror.com.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
@@ -110,7 +110,7 @@ public class TestAndroidApps {
     public void testMethod3() throws IOException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+        desiredCapabilities.setCapability("appium:platformVersion", "16.0");
         desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\ApiDemos-debug.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         driver2 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
@@ -119,7 +119,7 @@ public class TestAndroidApps {
 
         desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("appium:platformVersion", "15.0");
+        desiredCapabilities.setCapability("appium:platformVersion", "16.0");
         desiredCapabilities.setCapability("appium:app", "C:\\Users\\sohjnthn\\IdeaProjects\\Selenium_Tutorial\\app\\com.microsoft.emmx.canary_138.0.3336.0-333600000_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
         driver3 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
