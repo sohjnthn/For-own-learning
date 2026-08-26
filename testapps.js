@@ -58,7 +58,7 @@ until = wd.until;
             platformName: 'Android', // or 'iOS'
             app: "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\app\\com.afwsamples.testdpc_9.0.12-9012_minAPI21(nodpi)_apkmirror.com.apk",
             automationName: 'UiAutomator2', // or 'XCUITest' for iOS
-            platformVersion: "15.0",
+            platformVersion: "16.0",
         }
     });
 
@@ -77,7 +77,7 @@ until = wd.until;
             platformName: 'Android', // or 'iOS'
             app: "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\app\\ApiDemos-debug.apk",
             automationName: 'UiAutomator2', // or 'XCUITest' for iOS
-            platformVersion: "15.0",
+            platformVersion: "16.0",
         }
     });
 
@@ -143,7 +143,7 @@ until = wd.until;
             platformName: 'Android', // or 'iOS'
             app: "C:\\Users\\sohjnthn\\WebstormProjects\\untitled1\\app\\com.microsoft.emmx.canary_138.0.3336.0-333600000_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk",
             automationName: 'UiAutomator2', // or 'XCUITest' for iOS
-            platformVersion: "15.0",
+            platformVersion: "16.0",
         }
     });
 
