@@ -883,3 +883,9 @@ Minor changes to the FirstGroupOfWebsites.java (and the equivalent testfirstgrou
 The three html reports were generated locally:
 
 https://github.com/sohjnthn/For-own-learning/commit/494456b9a4b80cb30d52e2fa994dca94f07d5cf3
+
+=
+
+30 August 2026 update:
+
+With Google - Gemini's advice, the JavaScript files were changed to be modular.
