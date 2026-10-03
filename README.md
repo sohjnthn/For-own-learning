@@ -1,4 +1,4 @@
-Good morning, my name is Jiong Hao. I am a 5-year purely manual software tester; and a 2-month hardware tester in Singapore.
+Good morning, my name is Jiong Hao. I wish to look for a non-remote, full-time, basic, entry-level AI Tools job for creating desktop websites, and Android applications in Singapore, with a notice period of one month, for a monthly salary of 2,900. Thank you.
 
 This webpage is for the two-month non-work experience learning for basic Selenium automation testing learning, for desktop web browser and Android mobile applications, for Java, Python, and JavaScript.
 
